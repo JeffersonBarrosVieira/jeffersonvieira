@@ -1,5 +1,8 @@
 function Home(){
-    return <h1>O jhonata é feio de mais e a Nega também</h1>
+    return (
+        <h1>Teste</h1><br/>
+        <li>123</li>
+        )
 }
 
 export default Home
