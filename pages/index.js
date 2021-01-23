@@ -1,8 +1,8 @@
 function Home(){
     return (
         <div>
-            <h1>Teste</h1><br/>
-            <li>134</li>
+            <h1>O Jhonata é feio</h1><br/>
+            <li>e a Nega também</li>
         </div>
         )
 }
