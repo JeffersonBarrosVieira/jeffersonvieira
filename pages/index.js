@@ -25,7 +25,7 @@ function Home(){
             <main className={styles.main}>
                 <h1 className={styles.title}>
                     Bem vindo ao meu <a href="#">Portifólio</a><br/>
-                    <code className={styles.code}>Versão 1.0</code>
+                    <code className={styles.code}>Versão 1.1</code>
                 </h1>
 
                 <p className={styles.description}>
