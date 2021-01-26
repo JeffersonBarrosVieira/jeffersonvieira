@@ -17,6 +17,7 @@ function App({ Component, pageProps }) {
       <Component {...pageProps} />
       <Head>
         <link rel="stylesheet" type="text/css" href="/nprogress.css" />
+        <link rel="stylesheet" type="text/css" href="/styles.css" />
       </Head>
     </>
     )
