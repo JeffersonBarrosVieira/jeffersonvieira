@@ -14,7 +14,7 @@ function Home(){
             
             <header clasName="cabecalho">
                 <div>
-                    <h1 id="cima"/>
+                    <h1 id="inicio"/>
                     <h1 className="nome">Jefferson Barros</h1>
                 </div>
             </header>
@@ -64,7 +64,7 @@ function Home(){
                                 </a>
                             </Link>
                         </div>
-                        <a href="#cima"><img src="/favicon.ico"/></a>
+                        <a href="#inicio"><img src="/favicon.ico"/></a>
                     </div>
                 </div>
 
