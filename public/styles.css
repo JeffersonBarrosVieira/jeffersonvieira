@@ -14,16 +14,14 @@
 
     text-align: center;
 
-    animation: fadeIn 2.0s both;
-}
-
-.fundo-principal {
     background-image: url('/astronomia.png');
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
 
     background-position: top center;
+
+    animation: fadeIn 2.0s both;
 }
 
 header {
@@ -65,7 +63,7 @@ main {
     padding: 0 3px;
     line-height: 0.9em;
     text-align: center;
-    font-size: 77px;
+    font-size: 62px;
     font-weight: 100;
     letter-spacing: 5px;
 }

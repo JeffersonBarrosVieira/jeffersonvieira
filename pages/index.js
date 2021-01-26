@@ -5,7 +5,7 @@ import styles from '../styles/Home.module.css';
 
 function Home(){
     return (
-        <div className="pagina-inicial fundo-principal">
+        <div className="pagina-inicial">
 
             <Head>
                 <title>Jefferson Barros</title>

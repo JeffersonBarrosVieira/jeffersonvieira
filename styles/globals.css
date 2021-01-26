@@ -2,14 +2,9 @@ html,
 body {
     padding: 0;
     margin: 0;
+    overflow-x: hidden !important;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-canvas {
-    border: solid 1px;
-    width: 600px;
-    height: 400px;
 }
 
 a {
