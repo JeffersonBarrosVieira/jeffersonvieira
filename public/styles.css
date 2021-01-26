@@ -162,6 +162,7 @@ code {
 .card:active {
     color:  #000000ce;
     border-color:  #000000ce;
+    animation: bounce 1s;
 }
 
 .card h3 {
@@ -235,4 +236,21 @@ footer h4 {
     background-position: top center;
 
     animation: fadeIn 2.0s both;
+}
+
+@keyframes bounce {
+    0%, 20%, 60%, 100% {
+        -webkit-transform: trasnlateY(0);
+        transform: trasnlateY(0);
+    }
+
+    40% {
+        -webkit-transform: trasnlateY(-20px);
+        transform: trasnlateY(-20px);
+    }
+
+    80% {
+        -webkit-transform: trasnlateY(-10px);
+        transform: trasnlateY(-10px);
+    }
 }
