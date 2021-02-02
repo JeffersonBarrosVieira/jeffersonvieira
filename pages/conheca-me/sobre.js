@@ -16,11 +16,12 @@ const Sobre = () => {
                     <p>
                         Estudate de Física do Instituto Federal de Educação,
                         Ciência e Tecnologia do Maranhão Campus Imperatriz,
-                        sempre fui apaixonado por tecnologia ciência e inovação.
+                        sempre fui apaixonado por tecnologia, inovação e ciência.
                         Desde pequeno sempre gostei de aprender sozinho e a internet
-                        só favorece essa concepção, mesmo sendo um ótimo aluno
-                        na escola tradicional, acredito fortemente que o nosso
-                        sistema de ensino esteja defasado. 
+                        vem se tornando uma grande aliada para isso.
+                        Mesmo sendo um aluno exemplar na escola convencional, acredito
+                        vigorosamente que o nosso sistema de ensino esteja defasado em relação
+                        aos nossos avanços como civilização. 
                     </p>
                 </a>
             </div>

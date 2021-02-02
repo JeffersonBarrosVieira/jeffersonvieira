@@ -31,7 +31,7 @@
 
         opacity: 0;
 
-        animation: fadeIn 2s 1.2s ease-in-out forwards;
+        animation: fadeIn 2s 2s ease-in-out forwards;
 
         .folha{
             padding: 0;
@@ -58,7 +58,7 @@
                 position: absolute;
                 z-index: 2;
 
-                animation: mexerFolha 3s 0s ease-in-out infinite alternate;
+                animation: mexerFolha 2s 0s ease-in-out infinite alternate;
             }
 
             &::before{
@@ -93,7 +93,7 @@
     }
     .card-descricao {
         margin: 16px;
-        padding: 24px;
+        padding: 16px;
         height: 400px;
         width: 320px;
         text-align: left;
@@ -104,10 +104,11 @@
         border-radius: 10px;
         opacity: 0;
         
-        animation: fadeIn 2s 1.4s ease-in-out forwards;
+        animation: fadeIn 2s 2.4s ease-in-out forwards;
         
         h3 {
-            margin: 0 0 16px 0;
+            
+            margin: 0 0 8px 0;
             font-size: 24px;
         }
 
