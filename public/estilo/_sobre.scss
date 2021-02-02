@@ -1,133 +1,59 @@
-#pagina-sobre{
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: system-ui,-apple-system,BlinkMacSystemFont,Segoe UI, Helvetica Neue,Helvetica,Arial,sans-serif;
-
-    background-image: url('/img/floresta.png');// url('/img/astronomia1.png');
-    background-attachment: fixed;
-    background-position: bottom;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    text-align: center;
-
-    animation: fadeIn 2.0s both;
-}
-
-#cabecalho{
-    background-color: #031f3b;
-    width: 100vw;
-    height: 8vh;
-    text-align: left;
-    justify-content: center;
-    border-right: 2px solid #000000ce;
-    // flex: 1;
-    display: flex;
-    flex-direction: column;
-    z-index: 5;
-
-    border-bottom: calc((0.6vh + 0.3vw)/2) solid #00000081;
-    .nome {
-        
-        margin: 0;
-        padding: 0 1.5vw;
-        line-height: 0.9em;
-        text-align: left;
-        color:  #d4d4d4;
-        font-size: calc((3vh + 1.5vw)/2);
-        font-weight: 100;
-        font-family: cursive;
-    
-        letter-spacing: -0.2vw;
-    }
-
-}
-
-#conteudo-pagina-sobre {
+#sobre {
     padding: 0;
-    margin: 0;
-    flex: 1;
-    width: 100vw;
-    height: 87vh;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    border-top: 2px solid #000000ce;
+    width: 100%;
+    margin-top: 0px;
     align-items: center;
-    z-index: 3;
+    justify-content: center;
+    
+    display: flex;
+    flex-direction: column;
 
-    background-image: linear-gradient(45deg, #036b087c, #1206557a 60%);
+    background-image: linear-gradient(45deg, #036b087c, #1206557a 60%), url('/img/floresta.png');
     background-attachment: fixed;
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
+    height: 0;
 
-    .grid-sobre {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex: 1;
-        flex-direction: row ;
-        flex-wrap: wrap;
-        padding: 0;
-        margin: 0;
-    }
-    .card1-sobre {
-        margin: 3vh;
-        padding: 0;
-        text-align: left;
-        color: #c9c9c9;
-        text-decoration: none;
-    }
-    .card2-sobre {
-        font-size: calc((2.5vh + 1.25vw)/2);
-        margin: 3vh;
-        flex: 1;
-        padding: 3vh;
-        text-align: left;
-        color: #c9c9c9;
-        text-decoration: none;
-        border: 0.5vh solid #c9c9c9;
-        border-radius: calc((0.6vh + 0.3vw)/2);
-        transition: color 0.3s ease, border-color 0.3s ease;
+    opacity: 1;
 
-        background-color: #00000070;
-        h1{
-            font-size: calc((4vh + 2vw)/2);
-        }
-        p{
-            text-align: justify;
-            font-size: calc((3.2vh + 1.6vw)/2);
-        }
-    }
+    animation: aparecer 4s 0s ease-out forwards;
 
     .foto{
         padding: 0;
-        margin: 0;
-        width: 50vh;
-        height: 65vh;
+        margin: 21px;
+        width: 310px;
+        height: 400px;
         background-image: url('/img/minha-foto2.png');
         background-size: cover;
         background-repeat: no-repeat;
 
+        opacity: 0;
+
+        animation: fadeIn 2s 1.2s ease-in-out forwards;
+
         .folha{
             padding: 0;
             margin: 0;
+            display: flex;
+            flex: 1;
+            flex-direction: column;
             height: 100%;
             width: 100%;
-            border-bottom: 1vh solid #c9c9c9;
+            align-items: baseline;
+            justify-content: left;
+        //     border-bottom: 1vh solid #c9c9c9;
 
             &::after {
-                margin: 1.4vh 1.4vh;
+                margin: 0;
                 background-image: url('../img/folha.png');
                 background-repeat: no-repeat;
                 background-size: cover;
+                background-position: left;
                 content: "";
-                height: 65vh;
-                width: 48vh;
+                height: 400px;
+                width: 310px;
                 pointer-events: none;
                 position: absolute;
                 z-index: 2;
@@ -137,12 +63,14 @@
 
             &::before{
                 margin: 0;
+                margin-top: -5px;
+                margin-left: -5px;
                 padding: 0;
-                border: 1vh solid #c9c9c9;
-                border-radius: 2vh;
+                border: 10px solid #c9c9c9;
+                border-radius: 5px;
                 content: '';
-                height:63vh;
-                width: 48vh;
+                height: 395px;
+                width: 305px;
                 pointer-events: none;
                 position: absolute;
                 background-color: #00000042;
@@ -151,30 +79,44 @@
 
         }
     }
-}
 
-#rodape-sobre {
-    background-color: #c4c4c4;
-    margin: 0;
-    width: 100vw;
-    height: 5vh;
-    border-top: calc((0.6vh + 0.3vw)/2) solid #000000ce;
-    display: flex;
-    align-items: center;
-
-    z-index: 8;
-
-    a {
-        margin: 0 1vw;
-        font-size: calc((2.5vh + 1.25vw)/2);
+    
+    .grid-sobre {
         display: flex;
-        justify-content: center;
         align-items: center;
-    }
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 1000px;
+        padding: 0;
+        margin: 0;
 
-    h4 {
+    }
+    .card-descricao {
+        margin: 16px;
+        padding: 24px;
+        height: 400px;
+        width: 320px;
+        text-align: left;
+        color: #c9c9c9;
+        background-color: #00000070;
+        text-decoration: none;
+        border: 3px solid #c9c9c9;
+        border-radius: 10px;
+        opacity: 0;
         
-        font-family: 'Times New Roman', Times, serif;
-        margin: 5px 0;
+        animation: fadeIn 2s 1.4s ease-in-out forwards;
+        
+        h3 {
+            margin: 0 0 16px 0;
+            font-size: 24px;
+        }
+
+        p {
+            margin: 0;
+            font-size: 18px;
+            line-height: 22px;
+            text-align: justify;
+        }
+        
     }
 }

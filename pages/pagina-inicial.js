@@ -1,7 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Link from 'next/link';
 
+import Sobre from './conheca-me/sobre'
+
 const PaginaInicial = () => {
+    let conteudo = [<Sobre/>];
+    const[Conteudo, AlterarConteudo] = useState("");
+
     return(
         <div id="pagina-inicial">
             
@@ -22,22 +27,23 @@ const PaginaInicial = () => {
                     <a href="#conhecer">(: Conheça-me :)</a>
                 </p>
     
-                <div id="conhecer">
+                <div id="conhecer" >
                     <div className="grid">    
-                        <Link href="/conheca-me/sobre">
-                            <a className="card">
-                                <h3>Sobre Min</h3>
-                                <p>Página em desenvolvimento...</p>
-                            </a>
-                        </Link>
-                        <Link href="/conheca-me/habilidades">
-                            <a className="card">
-                                <h3>Habilidades</h3>
-                                <p>Página em desenvolvimento...</p>
-                            </a>
-                        </Link>
+
+                        <a href="#sobre" className="card" onClick={ () => AlterarConteudo(conteudo[0]) }>
+                            <h3>Sobre Min</h3>
+                            <p>Página em desenvolvimento...</p>
+                        </a>
+
+                        <a className="card" onClick={ () => AlterarConteudo("") }>
+                            <h3>Habilidades</h3>
+                            <p>Página em desenvolvimento...</p>
+                        </a>
+                        
                     </div>
                 </div>
+
+                {Conteudo}
 
                 <div className="fundo2">
                     <div className="conteudo-fundo2">
