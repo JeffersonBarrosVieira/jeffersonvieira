@@ -73,7 +73,7 @@ const PaginaInicial = () => {
 
                 <div className="fundo2">
                     <div className="conteudo-fundo2">
-                        [Em Construção...]
+                        [Em Construção..]
                         <a href="#inicio" onClick={ () => AlterarConteudo("") }><img src="/img/favicon.ico"/></a>
                     </div>
                 </div>
