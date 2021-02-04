@@ -50,7 +50,7 @@ const PaginaInicial = () => {
                             você deve primeiro inventar o Universo."
                             <h3>Carl Sagan</h3>
                         </p>
-                        <p className="frase-2">
+                        <p className="frase-5">
                             "Eu poderia desistir, mas vejo um bom motivo para continuar... eu adoro as coisas difíceis."
                             <h3>Camila Bill</h3>
                         </p>
@@ -62,7 +62,7 @@ const PaginaInicial = () => {
                             "Logo que, numa inovação, nos mostram alguma coisa de antigo, ficamos sossegados."
                             <h3>Friedrich Nietzsche</h3>
                         </p>
-                        <p className="frase-5">
+                        <p className="frase-2">
                             "A física é a poesia da natureza. A matemática, o idioma."
                             <h3>Antonio Gomes Lacerda</h3>
                         </p>
