@@ -4,7 +4,7 @@ import Link from 'next/link';
 const Sobre = () => {
     return(
         <div id="sobre">
-            <div className="grid">    
+            <div className="grid-sobre">    
                 <div className="card-foto">
                     <div className="foto">
                         <div className="folha">

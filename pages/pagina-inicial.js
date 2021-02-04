@@ -1,10 +1,12 @@
 import React, {useState} from 'react';
-import Link from 'next/link';
 
-import Sobre from './conheca-me/sobre'
+import Sobre from './conheca-me/sobre';
+import Habilidades from './conheca-me/habilidades';
+import Projetos from './conheca-me/projetos';
+import Contato from './conheca-me/contato';
 
 const PaginaInicial = () => {
-    let conteudo = [<Sobre/>, "", "", ""];
+    let conteudo = [<Sobre/>, <Habilidades/>, <Projetos/>, <Contato/>];
     const[Conteudo, AlterarConteudo] = useState(conteudo[3]);
 
     return(
@@ -42,12 +44,28 @@ const PaginaInicial = () => {
                 </p>
     
                 <div id="conhecer" >
-                    <div className="grid">    
-
-                        <a className="card" onClick={ () => AlterarConteudo(conteudo[0]) }>
-                            <h3>Bloco em construção...</h3>
-                        </a>
-
+                    <div className="grid">
+                        <p className="frase-1">
+                            "Se você quiser fazer uma torta de maçã a partir do zero,
+                            você deve primeiro inventar o Universo."
+                            <h3>Carl Sagan</h3>
+                        </p>
+                        <p className="frase-2">
+                            "Eu poderia desistir, mas vejo um bom motivo para continuar... eu adoro as coisas difíceis."
+                            <h3>Camila Bill</h3>
+                        </p>
+                        <p className="frase-3">
+                            "Controle suas condições iniciais e determine dentro de sua fonte de aleatoriedade qual será o seu destino."
+                            <h3>Silvio Antonio Corrêa Junior</h3>
+                        </p>
+                        <p className="frase-4">
+                            "Logo que, numa inovação, nos mostram alguma coisa de antigo, ficamos sossegados."
+                            <h3>Friedrich Nietzsche</h3>
+                        </p>
+                        <p className="frase-5">
+                            "A física é a poesia da natureza. A matemática, o idioma."
+                            <h3>Antonio Gomes Lacerda</h3>
+                        </p>
                     </div>
                 </div>
 
@@ -55,11 +73,7 @@ const PaginaInicial = () => {
 
                 <div className="fundo2">
                     <div className="conteudo-fundo2">
-                        <div className="grid">    
-                            <a className="card">
-                                <h3>Bloco em construção...</h3>
-                            </a>
-                        </div>
+                        [Em Construção...]
                         <a href="#inicio" onClick={ () => AlterarConteudo("") }><img src="/img/favicon.ico"/></a>
                     </div>
                 </div>
@@ -70,7 +84,6 @@ const PaginaInicial = () => {
                     Developed by <h4>: Jefferson Barros Vieira</h4>.
                 </a>
             </footer>
-            
         </div>
     )
 }
