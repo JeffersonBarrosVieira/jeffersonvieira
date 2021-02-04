@@ -45,27 +45,28 @@ const PaginaInicial = () => {
     
                 <div id="conhecer" >
                     <div className="grid">
-                        <p className="frase-1">
+                        <div className="frase-A">
                             "Se você quiser fazer uma torta de maçã a partir do zero,
                             você deve primeiro inventar o Universo."
                             <h3>Carl Sagan</h3>
-                        </p>
-                        <p className="frase-5">
-                            "Eu poderia desistir, mas vejo um bom motivo para continuar... eu adoro as coisas difíceis."
+                        </div>
+                        <div className="frase-B">
+                            "Eu poderia desistir, mas vejo um bom motivo para continuar...
+                            eu adoro as coisas difíceis."
                             <h3>Camila Bill</h3>
-                        </p>
-                        <p className="frase-3">
+                        </div>
+                        <div className="frase-C">
                             "Controle suas condições iniciais e determine dentro de sua fonte de aleatoriedade qual será o seu destino."
                             <h3>Silvio Antonio Corrêa Junior</h3>
-                        </p>
-                        <p className="frase-4">
+                        </div>
+                        <div className="frase-D">
                             "Logo que, numa inovação, nos mostram alguma coisa de antigo, ficamos sossegados."
                             <h3>Friedrich Nietzsche</h3>
-                        </p>
-                        <p className="frase-2">
+                        </div>
+                        <div className="frase-E">
                             "A física é a poesia da natureza. A matemática, o idioma."
                             <h3>Antonio Gomes Lacerda</h3>
-                        </p>
+                        </div>
                     </div>
                 </div>
 
