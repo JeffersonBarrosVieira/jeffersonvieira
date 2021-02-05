@@ -37,7 +37,7 @@ const PaginaInicial = () => {
                     JEFFERSON <a href="#conhecer">BARROS</a>
                 </h1>
                 
-                <code className="versao">Versão 1.6</code>
+                <code className="versao">Versão 1.8</code>
 
                 <p className="descricao">
                     <a href="#conhecer">(: Conheça-me :)</a>
@@ -74,8 +74,12 @@ const PaginaInicial = () => {
 
                 <div className="fundo2">
                     <div className="conteudo-fundo2">
-                        [Em Construção..]
-                        <a href="#inicio" onClick={ () => AlterarConteudo("") }><img src="/img/favicon.ico"/></a>
+                        <a href="#inicio" onClick={ () => AlterarConteudo("") }>
+                            <img className="seta" src="/img/seta.png"/>
+                        </a>
+                        <div className="box-engrenagem">
+                            <img className="engrenagem" src="/img/engrenagem.png"/>
+                        </div>
                     </div>
                 </div>
             </main>

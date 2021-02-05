@@ -117,3 +117,35 @@
         opacity: 0;
     }
 }
+
+@keyframes rotacionar {
+    0%{
+        transform: rotateZ(0);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes bounce2 {
+    0%, 20%, 60%, 100% {
+        transform: translateY(0) rotateZ(-90deg);
+    }
+
+    40% {
+        transform: translateY(-20px) rotateZ(-90deg);
+    }
+
+    80% {
+        transform: translateY(-10px) rotateZ(-90deg);
+    }
+}
+
+@keyframes aumentarLargura{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}

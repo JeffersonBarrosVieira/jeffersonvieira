@@ -18,7 +18,7 @@
 
     opacity: 1;
 
-    animation: aparecer 4s 0s ease-out forwards;
+    animation: aparecer 4s 0.8s ease-out forwards;
 
     .foto{
         padding: 0;
@@ -31,7 +31,7 @@
 
         opacity: 0;
 
-        animation: fadeIn 2s 2s ease-in-out forwards;
+        animation: fadeIn 2s 2.3s ease-in-out forwards;
 
         .folha{
             padding: 0;
@@ -104,7 +104,7 @@
         border-radius: 10px;
         opacity: 0;
         
-        animation: fadeIn 2s 2.4s ease-in-out forwards;
+        animation: fadeIn 2s 2.8s ease-in-out forwards;
         
         h3 {
             

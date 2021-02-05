@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 
 const Sobre = () => {
     return(
@@ -11,7 +10,7 @@ const Sobre = () => {
                         </div>
                     </div>
                 </div>
-                <a className="card-descricao">
+                <div className="card-descricao">
                     <h3>Minha História</h3>
                     <p>
                         Estudate de Física do Instituto Federal de Educação,
@@ -23,7 +22,7 @@ const Sobre = () => {
                         vigorosamente que o nosso sistema de ensino esteja defasado em relação
                         aos nossos avanços como civilização. 
                     </p>
-                </a>
+                </div>
             </div>
         </div>
     )
