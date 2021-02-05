@@ -78,7 +78,9 @@ const PaginaInicial = () => {
                             <img className="seta" src="/img/seta.png"/>
                         </a>
                         <div className="box-engrenagem">
-                            <img className="engrenagem" src="/img/engrenagem.png"/>
+                            <a href="#inicio" onClick={ () => AlterarConteudo("") }>
+                                <img className="engrenagem" src="/img/engrenagem.png"/>
+                            </a>
                         </div>
                     </div>
                 </div>
