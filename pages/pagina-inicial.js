@@ -36,8 +36,6 @@ const PaginaInicial = () => {
                 <h1 className="title">
                     JEFFERSON <a href="#conhecer">BARROS</a>
                 </h1>
-                
-                <code className="versao">Versão 1.8</code>
 
                 <p className="descricao">
                     <a href="#conhecer">(: Conheça-me :)</a>
