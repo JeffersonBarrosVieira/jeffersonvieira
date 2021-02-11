@@ -13,7 +13,7 @@ const Sobre = () => {
                 <div className="card-descricao">
                     <h3>Minha História</h3>
                     <p>
-                        Estudate de Física do Instituto Federal de Educação,
+                        Estudante de Física do Instituto Federal de Educação,
                         Ciência e Tecnologia do Maranhão Campus Imperatriz,
                         sempre fui apaixonado por tecnologia, inovação e ciência.
                         Desde pequeno sempre gostei de aprender sozinho e a internet
