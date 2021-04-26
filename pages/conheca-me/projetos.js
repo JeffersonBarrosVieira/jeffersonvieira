@@ -94,7 +94,7 @@ function Card(props) {
                                                 display: 'flex',
                                                 flexDirection: 'column'}}>
 
-                                        <div style={{margin: '70px 0px 60px 170px',
+                                        <div style={{margin: '70px 0px 50px 170px',
                                                     padding: '5px 0 0 0',
                                                     width: '120px',
                                                     height: '80px',
@@ -148,35 +148,47 @@ function Projetos() {
     return(
         <div id="projetos">
             <div className="grid-projetos">    
-                <a href="https://www.boavista.rr.leg.br/imagens/emconstruo.jpg/image">
+                <a className="a-1" href="https://www.boavista.rr.leg.br/imagens/emconstruo.jpg/image">
                     <Card diretorio="url('../img/card/icones/mecanico.png')"
-                        incremento="0"
-                        title="Projetos Mecânicos"> 
-                        Desenvolvimentos de máquinas ou equipamentos. Nesses projetos, tem como procedimentos metodológicos: design inicial, dimensionamento, análise mecânica, plantas estruturais e modelagem matemática.
-                    </Card>
-                </a>
-
-                <a href="https://www.boavista.rr.leg.br/imagens/emconstruo.jpg/image">
-                    <Card diretorio="url('../img/card/icones/docencia.png')"
-                        incremento="1"
-                        title="Projetos à Docência"> 
-                        Esses projetos são atividades aplicadas em escolas de Ensino Médio, com o intuito de trazer ao aluno a compreensão da finalidade do conteúdo ministrado por meio de experimentos que regem o campo da pesquisa científica.
-                    </Card>
-                </a>
-
-                <a href="https://www.boavista.rr.leg.br/imagens/emconstruo.jpg/image">
-                    <Card diretorio="url('../img/card/icones/matematica.png')"
                         incremento="2"
-                        title="Projetos Matemático"> 
-                        Esses projetos tem como base, a elaboração de um modelo matemático em cima de uma situação física, abordando meios tecnológicos que possibilitem uma relação mais estreita entre a situação física e a matemática
+                        title="Projetos Mecânicos"> 
+                        Clique nesse card para ver meus desenvolvimentos de mecânismos ou equipamentos. Abordo: <br/><br/>
+                        -Dimensionamento;<br/>
+                        -Análise mecânica/elétrica;<br/>
+                        -Plantas estruturais;<br/>
+                        -Modelagem matemática.
                     </Card>
                 </a>
 
-                <a href="https://www.boavista.rr.leg.br/imagens/emconstruo.jpg/image">
+                <a className="a-2" href="https://www.boavista.rr.leg.br/imagens/emconstruo.jpg/image">
                     <Card diretorio="url('../img/card/icones/web.png')"
-                        incremento="3"
+                        incremento="5"
                         title="Projetos Web"> 
-                        Projetos que abarcam em geral a utilização das linguagens de programação: HTML, C++, Python, JavaScript. Onde aproveito os conhecimentos que venho adquirindo na minha carreira acadêmica, para descontrair um pouco.
+                        Clique nesse card para contemplar meus desenvolvimentos web que abarcam em geral a utilização das linguagens de programação: <br/><br/>
+                        -HTML; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-C++; <br/>
+                        -Python;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-JavaScript.
+                    </Card>
+                </a>
+
+                <a className="a-3" href="https://www.boavista.rr.leg.br/imagens/emconstruo.jpg/image">
+                    <Card diretorio="url('../img/card/icones/matematica.png')"
+                        incremento="4"
+                        title="Projetos Matemático"> 
+                        Clique nesse card para visualizar elaborações de modelos matemáticos em cima de situações físicas. Abordo: <br/><br/>
+                        -Situações/Problemas Físicos;<br/>
+                        -Ferramentas tecnológicas; <br/>
+                        -Modelagem matemática;
+                    </Card>
+                </a>
+
+                <a className="a-4" href="https://www.boavista.rr.leg.br/imagens/emconstruo.jpg/image">
+                    <Card diretorio="url('../img/card/icones/docencia.png')"
+                        incremento="3"
+                        title="Projetos à Docência"> 
+                        Clique nesse card para apreciar atividades aplicadas em escolas de Ensino Médio. Abordo: <br/><br/>
+                        -Práticas pedagógicas;<br/>
+                        -Pesquisa científica fora da escola; <br/>
+                        -Compreensão da finalidade do conteúdo na prática.
                     </Card>
                 </a>
 

@@ -34,11 +34,11 @@ const PaginaInicial = () => {
 
             <main id="inicio">
                 <h1 className="title">
-                    JEFFERSON <a href="#conhecer">BARROS</a>
+                    JEFFERSON <a href="#conhecer" onClick={ () => AlterarConteudo(conteudo[0]) }>BARROS</a>
                 </h1>
 
                 <p className="descricao">
-                    <a href="#conhecer">(: Conheça-me :)</a>
+                    <a href="#conhecer" onClick={ () => AlterarConteudo(conteudo[0]) }>(: Conheça-me :)</a>
                 </p>
     
                 <div id="conhecer" >

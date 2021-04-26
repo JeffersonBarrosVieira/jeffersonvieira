@@ -48,6 +48,29 @@
     }
 }
 
+@keyframes oscilar {
+    0% {
+        opacity: 0.8;
+    }
+    30%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes focar {
+    0% {
+        border: 0 solid #c9c9c9;
+        border-radius: 10px;
+    }
+    100%{
+        border: 3px solid #c9c9c9;
+        border-radius: 10px;
+    }
+}
+
 @keyframes mexerFolha {
     0% {
         transform:  translateX(2px) translateY(0) rotateY(0deg) rotateX(0deg);

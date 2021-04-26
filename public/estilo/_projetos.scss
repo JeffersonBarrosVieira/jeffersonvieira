@@ -15,73 +15,11 @@
     background-size: cover;
     background-repeat: no-repeat;
 
-    height: 850px;
-    flex: 1;
-    padding: 20px 0 20px 0;
+    height: 0;
 
     opacity: 1;
 
-    // animation: aparecer 4s 0.8s ease-out forwards;
-
-    .foto{
-        padding: 0;
-        margin: 21px;
-        width: 310px;
-        height: 400px;
-        background-image: url('../img/minha-foto2.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-
-        opacity: 0;
-
-        animation: fadeIn 2s 2.3s ease-in-out forwards;
-
-        .folha{
-            padding: 0;
-            margin: 0;
-            display: flex;
-            flex: 1;
-            flex-direction: column;
-            height: 100%;
-            width: 100%;
-            align-items: baseline;
-            justify-content: left;
-        //     border-bottom: 1vh solid #c9c9c9;
-
-            &::after {
-                margin: 0;
-                background-image: url('../img/folha.png');
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: left;
-                content: "";
-                height: 400px;
-                width: 310px;
-                pointer-events: none;
-                position: absolute;
-                z-index: 2;
-
-                animation: mexerFolha 2s 0s ease-in-out infinite alternate;
-            }
-
-            &::before{
-                margin: 0;
-                margin-top: -5px;
-                margin-left: -5px;
-                padding: 0;
-                border: 10px solid #c9c9c9;
-                border-radius: 5px;
-                content: '';
-                height: 395px;
-                width: 305px;
-                pointer-events: none;
-                position: absolute;
-                background-color: #00000042;
-                z-index: 3;
-            }
-
-        }
-    }
+    animation: aparecer 4s 0.8s ease-out forwards;
 
     .grid-projetos {
         display: flex;
@@ -92,35 +30,31 @@
         padding: 0;
         margin: 0;
 
-    }
+        
 
-    .card-descricao {
-        margin: 16px;
-        padding: 16px;
-        height: 400px;
-        width: 320px;
-        text-align: left;
-        color: #c9c9c9;
-        background-color: #00000070;
-        text-decoration: none;
-        border: 3px solid #c9c9c9;
-        border-radius: 10px;
-        opacity: 0;
-        
-        animation: fadeIn 2s 2.8s ease-in-out forwards;
-        
-        h3 {
-            
-            margin: 0 0 8px 0;
-            font-size: 24px;
+        a {
+            opacity: 1;
+            text-decoration: none;
+            margin: 0 5px;
+
+            &:hover,
+            &:focus,
+            &:active {
+                transform: rotate(15deg) scale(1.02);
+            }
         }
 
-        p {
-            margin: 0;
-            font-size: 18px;
-            line-height: 22px;
-            text-align: justify;
+        .a-1{
+            animation: oscilar 4s 8s infinite;
         }
-        
+        .a-2{
+            animation: oscilar 4s 9s infinite;
+        }
+        .a-3{
+            animation: oscilar 4s 10s infinite;
+        }
+        .a-4{
+            animation: oscilar 4s 11s infinite;
+        }
     }
 }
