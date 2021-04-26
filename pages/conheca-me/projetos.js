@@ -152,7 +152,7 @@ function Projetos() {
                     <Card diretorio="url('../img/card/icones/mecanico.png')"
                         incremento="2"
                         title="Projetos Mecânicos"> 
-                        Clique nesse card para ver meus desenvolvimentos de mecânismos ou equipamentos. Abordo: <br/><br/>
+                        Clique nesse card para ver meus desenvolvimentos de mecanismos ou equipamentos. Abordo: <br/><br/>
                         -Dimensionamento;<br/>
                         -Análise mecânica/elétrica;<br/>
                         -Plantas estruturais;<br/>
