@@ -1,4 +1,4 @@
-#sobre {
+#projetos{
     padding: 0;
     border-top: 2px solid #000000ce;
     width: 100%;
@@ -14,11 +14,14 @@
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 0;
+
+    height: 850px;
+    flex: 1;
+    padding: 20px 0 20px 0;
 
     opacity: 1;
 
-    animation: aparecer 4s 0.8s ease-out forwards;
+    // animation: aparecer 4s 0.8s ease-out forwards;
 
     .foto{
         padding: 0;
@@ -80,8 +83,7 @@
         }
     }
 
-    
-    .grid-sobre {
+    .grid-projetos {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -91,6 +93,7 @@
         margin: 0;
 
     }
+
     .card-descricao {
         margin: 16px;
         padding: 16px;

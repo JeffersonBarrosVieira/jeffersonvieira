@@ -1,8 +1,8 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 function Card(props) {
     return(
-            <div style={{margin: '10px 0',
+            <div style={{margin: '0',
                         padding: '0',
                         height: '370px',
                         width: '350px',
@@ -77,7 +77,7 @@ function Card(props) {
                                             height: '100%',
                                             width: '100%',
                                             
-                                            backgroundImage: props.diretorio,
+                                            backgroundImage: "url('../img/card/icones/mecanico.png')",
                                             backgroundRepeat: 'no-repeat',
                                             backgroundSize: 'cover',
                                             backgroundPosition: 'left',
@@ -99,7 +99,7 @@ function Card(props) {
                                                     width: '120px',
                                                     height: '80px',
                                                     textAlign: 'center',
-                                                    fontSize: '31px',
+                                                    fontSize: '32px',
                                                     lineHeight: '36px',
                                                     fontFamily: 'cursive',
 
@@ -121,8 +121,8 @@ function Card(props) {
                                                     height: '110px',
                                                     width: '235px',
                                                     textAlign: 'justify',
-                                                    fontSize: '15px',
-                                                    lineHeight: '16px',
+                                                    fontSize: '13px',
+                                                    lineHeight: '15px',
 
                                                     fontWeight: '100',
                                                     color: '#c9c9c9',
@@ -144,30 +144,37 @@ function Card(props) {
     )
 };
 
-function Projetos() {
+const Teste = () => {
     return(
-        <div id="projetos">
-            <div className="grid-projetos">    
-                <Card diretorio="url('../img/card/icones/mecanico.png')"
-                    title="Projetos Mecânicos"> 
-                    Desenvolvimentos de máquinas ou equipamentos. Nesses projetos, tem como procedimentos metodológicos: design inicial, dimensionamento, análise mecânica, plantas estruturais e modelagem matemática.
+        <div id="teste">
+            <div id="cards">
+                <Card title="Projetos Mecânicos"> 
+                    Desenvolvimentos de uma máquina ou equipamento. Nesses projetos, tem como procedimentos metodológicos: design inicial, dimensionamento, análise mecânica, plantas estruturais e modelagem matemática.
                 </Card>
-                <Card diretorio="url('../img/card/icones/docencia.png')"
-                    title="Projetos à Docência"> 
-                    Esses projetos são atividades aplicadas em escolas de Ensino Médio, com o intuito de trazer ao aluno a compreensão da finalidade do conteúdo ministrado por meio de experimentos que regem o campo da pesquisa científica.
-                </Card>
-                <Card diretorio="url('../img/card/icones/matematica.png')"
-                    title="Projetos Matemático"> 
-                    Esses projetos tem como base, a elaboração de um modelo matemático em cima de uma situação física, abordando meios tecnológicos que possibilitem uma relação mais estreita entre a situação física e a matemática
-                </Card>
-                <Card diretorio="url('../img/card/icones/web.png')"
-                    title="Projetos Web"> 
-                    Projetos que abarcam em geral a utilização das linguagens de programação: HTML, C++, Python, JavaScript. Onde aproveito os conhecimentos que venho adquirindo na minha carreira acadêmica, para descontrair um pouco.
-                </Card>
-                
+                {/* <div className="amarela-direita">
+                    <div className="fundo">
+                        <div className="amarela-esquerda">
+                            <div className="branca">
+                                <div className="amarela-baixo">
+                                    <div className="icone-mecanica">
+                                        <div className="textos">
+                                            <div className="titulo">
+                                                Projetos
+                                                Mecânicos
+                                            </div>
+                                            <div className="descricao">
+                                                 Desenvolvimentos de uma máquina ou equipamento. Nesses projetos, tem como procedimentos metodológicos: design inicial, dimensionamento, análise mecânica, plantas estruturais e modelagem matemática.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> */}
             </div>
         </div>
     )
 }
 
-export default Projetos
+export default Teste

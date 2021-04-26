@@ -1,8 +1,10 @@
-import Construcao from './construcao';
+import React from 'react';
 
 function Contato() {
     return(
-        <Construcao/>
+        <div id="contato">
+            Contatos
+        </div>
     )
 }
 
