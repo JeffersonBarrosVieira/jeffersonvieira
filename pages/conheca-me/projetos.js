@@ -14,7 +14,7 @@ function Card(props) {
             
                         opacity: '0',
             
-                        animation: 'fadeIn 0.5s 1.0s both'}}>
+                        animation: 'fadeIn 0.5s '+ (parseInt(props.incremento)+1.0).toString() +'s'+' both'}}>
 
                 <div style={{margin: '0',
                             padding: '0',
@@ -28,7 +28,7 @@ function Card(props) {
                 
                             opacity: '0',
                 
-                            animation: 'fadeIn 1.0s 1.0s both'}}>
+                            animation: 'fadeIn 1.0s '+ (parseInt(props.incremento)+0.5).toString() +'s'+' both'}}>
 
                     <div style={{margin: '0',
                                 padding: '0',
@@ -42,7 +42,7 @@ function Card(props) {
                     
                                 opacity: '0',
                     
-                                animation: 'fadeIn 1.0s 1.5s both'}}>
+                                animation: 'fadeIn 1.0s '+ (parseInt(props.incremento)+1.5).toString() +'s'+' both'}}>
 
                         <div style={{margin: '0',
                                     padding: '0',
@@ -56,7 +56,7 @@ function Card(props) {
                         
                                     opacity: '0',
                         
-                                    animation: 'fadeIn 1.0s 1.8s both'}}>
+                                    animation: 'fadeIn 1.0s '+ (parseInt(props.incremento)+1.8).toString() +'s'+' both'}}>
 
                             <div style={{margin: '0',
                                         padding: '0',
@@ -84,7 +84,7 @@ function Card(props) {
                                 
                                             opacity: '0',
                                 
-                                            animation: 'fadeIn 1.0s 2.4s both'}}>
+                                            animation: 'fadeIn 1.0s '+ (parseInt(props.incremento)+2.4).toString() +'s'+' both'}}>
 
                                     <div style={{margin: '0',
                                                 padding: '0',
@@ -111,7 +111,7 @@ function Card(props) {
 
                                                     opacity: '0',
 
-                                                    animation: 'fadeIn 1.0s 2.7s both'}}>
+                                                    animation: 'fadeIn 1.0s '+ (parseInt(props.incremento)+2.7).toString() +'s'+' both'}}>
                                             
                                             {props.title}
                                             
@@ -129,7 +129,7 @@ function Card(props) {
 
                                                     opacity: '0',
 
-                                                    animation: 'fadeIn 1.0s 3.0s both'}}>
+                                                    animation: 'fadeIn 1.0s '+ (parseInt(props.incremento)+3.0).toString() +'s'+' both'}}>
                                                 
                                             {props.children}
 
@@ -149,22 +149,26 @@ function Projetos() {
         <div id="projetos">
             <div className="grid-projetos">    
                 <Card diretorio="url('../img/card/icones/mecanico.png')"
+                    incremento="0"
                     title="Projetos Mecânicos"> 
                     Desenvolvimentos de máquinas ou equipamentos. Nesses projetos, tem como procedimentos metodológicos: design inicial, dimensionamento, análise mecânica, plantas estruturais e modelagem matemática.
                 </Card>
                 <Card diretorio="url('../img/card/icones/docencia.png')"
+                    incremento="1"
                     title="Projetos à Docência"> 
                     Esses projetos são atividades aplicadas em escolas de Ensino Médio, com o intuito de trazer ao aluno a compreensão da finalidade do conteúdo ministrado por meio de experimentos que regem o campo da pesquisa científica.
                 </Card>
                 <Card diretorio="url('../img/card/icones/matematica.png')"
+                    incremento="2"
                     title="Projetos Matemático"> 
                     Esses projetos tem como base, a elaboração de um modelo matemático em cima de uma situação física, abordando meios tecnológicos que possibilitem uma relação mais estreita entre a situação física e a matemática
                 </Card>
                 <Card diretorio="url('../img/card/icones/web.png')"
+                    incremento="3"
                     title="Projetos Web"> 
                     Projetos que abarcam em geral a utilização das linguagens de programação: HTML, C++, Python, JavaScript. Onde aproveito os conhecimentos que venho adquirindo na minha carreira acadêmica, para descontrair um pouco.
                 </Card>
-                
+
             </div>
         </div>
     )
