@@ -148,26 +148,37 @@ function Projetos() {
     return(
         <div id="projetos">
             <div className="grid-projetos">    
-                <Card diretorio="url('../img/card/icones/mecanico.png')"
-                    incremento="0"
-                    title="Projetos Mecânicos"> 
-                    Desenvolvimentos de máquinas ou equipamentos. Nesses projetos, tem como procedimentos metodológicos: design inicial, dimensionamento, análise mecânica, plantas estruturais e modelagem matemática.
-                </Card>
-                <Card diretorio="url('../img/card/icones/docencia.png')"
-                    incremento="1"
-                    title="Projetos à Docência"> 
-                    Esses projetos são atividades aplicadas em escolas de Ensino Médio, com o intuito de trazer ao aluno a compreensão da finalidade do conteúdo ministrado por meio de experimentos que regem o campo da pesquisa científica.
-                </Card>
-                <Card diretorio="url('../img/card/icones/matematica.png')"
-                    incremento="2"
-                    title="Projetos Matemático"> 
-                    Esses projetos tem como base, a elaboração de um modelo matemático em cima de uma situação física, abordando meios tecnológicos que possibilitem uma relação mais estreita entre a situação física e a matemática
-                </Card>
-                <Card diretorio="url('../img/card/icones/web.png')"
-                    incremento="3"
-                    title="Projetos Web"> 
-                    Projetos que abarcam em geral a utilização das linguagens de programação: HTML, C++, Python, JavaScript. Onde aproveito os conhecimentos que venho adquirindo na minha carreira acadêmica, para descontrair um pouco.
-                </Card>
+                <a href="https://www.boavista.rr.leg.br/imagens/emconstruo.jpg/image">
+                    <Card diretorio="url('../img/card/icones/mecanico.png')"
+                        incremento="0"
+                        title="Projetos Mecânicos"> 
+                        Desenvolvimentos de máquinas ou equipamentos. Nesses projetos, tem como procedimentos metodológicos: design inicial, dimensionamento, análise mecânica, plantas estruturais e modelagem matemática.
+                    </Card>
+                </a>
+
+                <a href="https://www.boavista.rr.leg.br/imagens/emconstruo.jpg/image">
+                    <Card diretorio="url('../img/card/icones/docencia.png')"
+                        incremento="1"
+                        title="Projetos à Docência"> 
+                        Esses projetos são atividades aplicadas em escolas de Ensino Médio, com o intuito de trazer ao aluno a compreensão da finalidade do conteúdo ministrado por meio de experimentos que regem o campo da pesquisa científica.
+                    </Card>
+                </a>
+
+                <a href="https://www.boavista.rr.leg.br/imagens/emconstruo.jpg/image">
+                    <Card diretorio="url('../img/card/icones/matematica.png')"
+                        incremento="2"
+                        title="Projetos Matemático"> 
+                        Esses projetos tem como base, a elaboração de um modelo matemático em cima de uma situação física, abordando meios tecnológicos que possibilitem uma relação mais estreita entre a situação física e a matemática
+                    </Card>
+                </a>
+
+                <a href="https://www.boavista.rr.leg.br/imagens/emconstruo.jpg/image">
+                    <Card diretorio="url('../img/card/icones/web.png')"
+                        incremento="3"
+                        title="Projetos Web"> 
+                        Projetos que abarcam em geral a utilização das linguagens de programação: HTML, C++, Python, JavaScript. Onde aproveito os conhecimentos que venho adquirindo na minha carreira acadêmica, para descontrair um pouco.
+                    </Card>
+                </a>
 
             </div>
         </div>
