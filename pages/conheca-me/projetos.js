@@ -162,7 +162,7 @@ function Projetos() {
 
                 <a className="a-2" href="https://www.boavista.rr.leg.br/imagens/emconstruo.jpg/image">
                     <Card diretorio="url('../img/card/icones/web.png')"
-                        incremento="5"
+                        incremento="3"
                         title="Projetos Web"> 
                         Clique nesse card para contemplar meus desenvolvimentos web que abarcam em geral a utilização das linguagens de programação: <br/><br/>
                         -HTML; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-C++; <br/>
@@ -183,7 +183,7 @@ function Projetos() {
 
                 <a className="a-4" href="https://www.boavista.rr.leg.br/imagens/emconstruo.jpg/image">
                     <Card diretorio="url('../img/card/icones/docencia.png')"
-                        incremento="3"
+                        incremento="5"
                         title="Projetos à Docência"> 
                         Clique nesse card para apreciar atividades aplicadas em escolas de Ensino Médio. Abordo: <br/><br/>
                         -Práticas pedagógicas;<br/>
