@@ -165,7 +165,7 @@ function Projetos() {
                         incremento="3"
                         title="Projetos Web"> 
                         Clique nesse card para contemplar meus desenvolvimentos web que abarcam em geral a utilização das linguagens de programação: <br/><br/>
-                        -HTML; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-C++; <br/>
+                        -HTML/Css/Sass;&nbsp; &nbsp;-C++; <br/>
                         -Python;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-JavaScript.
                     </Card>
                 </a>
