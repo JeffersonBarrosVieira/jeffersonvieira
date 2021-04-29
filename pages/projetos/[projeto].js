@@ -6,7 +6,7 @@ var num = 0;
 function Projetos (){
     const router = useRouter();
     const id = router.query.projeto;
-    let conteudo = {"mecanico": <div style={{color: 'red',
+    let conteudo = {"mecanico": <div style={{color: '#c9c9c9',
                                             width: '100%',
                                             borderTop: '1px solid #000000ce',
                                             borderBottom: '1px solid #000000ce',
@@ -17,7 +17,7 @@ function Projetos (){
                                     Apresentação dos Projetos Mecanicos
                                 </div>,
 
-                    "web":  <div style={{color: 'red',
+                    "web":  <div style={{color: '#c9c9c9',
                                         width: '100%',
                                         borderTop: '1px solid #000000ce',
                                         borderBottom: '1px solid #000000ce',
@@ -28,7 +28,7 @@ function Projetos (){
                                 Apresentação dos Projetos Web
                             </div>,
 
-                    "matematico":   <div style={{color: 'red',
+                    "matematico":   <div style={{color: '#c9c9c9',
                                                 width: '100%',
                                                 borderTop: '1px solid #000000ce',
                                                 borderBottom: '1px solid #000000ce',
@@ -39,7 +39,7 @@ function Projetos (){
                                         Apresentação dos Projetos Matemáticos
                                     </div>,
 
-                    "docente":  <div style={{color: 'red',
+                    "docente":  <div style={{color: '#c9c9c9',
                                             width: '100%',
                                             borderTop: '1px solid #000000ce',
                                             padding: '0',
