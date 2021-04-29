@@ -102,7 +102,7 @@ function Projetos (){
                                             AlterarWeb(""),
                                             AlterarMatematico(""),
                                             AlterarDocente(""))}>
-                            Projetos Mecânicos
+                            PROJETOS MECÂNICOS
                         </a>
 
                         <div style={{width:'165px',
@@ -129,7 +129,7 @@ function Projetos (){
                                             AlterarWeb(conteudo.web),
                                             AlterarMatematico(""),
                                             AlterarDocente(""))}>
-                            Projetos Web
+                            PROJETOS WEB
                         </a>
                     </div>
 
@@ -139,7 +139,7 @@ function Projetos (){
                                             AlterarWeb(""),
                                             AlterarMatematico(conteudo.matematico),
                                             AlterarDocente(""))}>
-                            Projetos Matemáticos
+                            PROJETOS MATEMÁTICOS
                         </a>
 
                         <div style={{width:'165px',
@@ -166,7 +166,7 @@ function Projetos (){
                                                             AlterarWeb(""),
                                                             AlterarMatematico(""),
                                                             AlterarDocente(conteudo.docente))}>
-                            Projetos à Docência
+                            PROJETOS À DOCENCIA
                         </a>
                     </div>
 
