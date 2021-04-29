@@ -148,7 +148,7 @@ function Projetos() {
     return(
         <div id="projetos">
             <div className="grid-projetos">    
-                <a className="a-1" href="/projetos/mecanico#mecanico">
+                <a className="a-1" href="/projetos/mecanico#inicio">
                     <Card diretorio="url('../img/card/icones/mecanico.png')"
                         incremento="2"
                         title="Projetos Mecânicos"> 
@@ -160,7 +160,7 @@ function Projetos() {
                     </Card>
                 </a>
 
-                <a className="a-2" href="/projetos/web#web">
+                <a className="a-2" href="/projetos/web#mecanico">
                     <Card diretorio="url('../img/card/icones/web.png')"
                         incremento="3"
                         title="Projetos Web"> 
@@ -170,7 +170,7 @@ function Projetos() {
                     </Card>
                 </a>
 
-                <a className="a-3" href="/projetos/matematico#matematico">
+                <a className="a-3" href="/projetos/matematico#web">
                     <Card diretorio="url('../img/card/icones/matematica.png')"
                         incremento="4"
                         title="Projetos Matemático"> 
@@ -181,7 +181,7 @@ function Projetos() {
                     </Card>
                 </a>
 
-                <a className="a-4" href="/projetos/docencia#docencia">
+                <a className="a-4" href="/projetos/docencia#matematico">
                     <Card diretorio="url('../img/card/icones/docencia.png')"
                         incremento="5"
                         title="Projetos à Docência"> 

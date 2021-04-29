@@ -54,24 +54,24 @@ function Habilidades() {
                 <div className="card-descricao">
                     <h3>Programação</h3>
                     <BarraProgresso porcentagem='90%' tempo='5s'>HTML</BarraProgresso>
-                    <BarraProgresso porcentagem='81%' tempo='5s'>PHP</BarraProgresso>
-                    <BarraProgresso porcentagem='73%' tempo='5s'>JavaScript</BarraProgresso>
-                    <BarraProgresso porcentagem='90%' tempo='5s'>CSS</BarraProgresso>
-                    <BarraProgresso porcentagem='88%' tempo='5s'>SASS</BarraProgresso>
-                    <BarraProgresso porcentagem='90%' tempo='5s'>C++</BarraProgresso>
+                    <BarraProgresso porcentagem='81%' tempo='5.2s'>PHP</BarraProgresso>
+                    <BarraProgresso porcentagem='73%' tempo='5.4s'>JavaScript</BarraProgresso>
+                    <BarraProgresso porcentagem='90%' tempo='5.6s'>CSS</BarraProgresso>
+                    <BarraProgresso porcentagem='86%' tempo='5.8s'>SASS</BarraProgresso>
+                    <BarraProgresso porcentagem='78%' tempo='6s'>C++</BarraProgresso>
                 </div>
 
                 <div className="card-descricao">
                     <h3>Design Gráfico</h3>
-                    <BarraProgresso porcentagem='70%' tempo='5s'>Photoshop</BarraProgresso>
-                    <BarraProgresso porcentagem='90%' tempo='5s'>GIMP</BarraProgresso>
-                    <BarraProgresso porcentagem='83%' tempo='5s'>Inkscape</BarraProgresso>
+                    <BarraProgresso porcentagem='70%' tempo='6.2s'>Photoshop</BarraProgresso>
+                    <BarraProgresso porcentagem='90%' tempo='6.4s'>GIMP</BarraProgresso>
+                    <BarraProgresso porcentagem='83%' tempo='6.6s'>Inkscape</BarraProgresso>
                 </div>
                 <div className="card-descricao">
                     <h3>Modelagem Matemática</h3>
-                    <BarraProgresso porcentagem='90%' tempo='5s'>Física-Matemática</BarraProgresso>
-                    <BarraProgresso porcentagem='83%' tempo='5s'>Cálculo Infinitesimal</BarraProgresso>
-                    <BarraProgresso porcentagem='75%' tempo='5s'>Álgebra Linear</BarraProgresso>
+                    <BarraProgresso porcentagem='90%' tempo='6.8s'>Física-Matemática</BarraProgresso>
+                    <BarraProgresso porcentagem='83%' tempo='7s'>Cálculo Infinitesimal</BarraProgresso>
+                    <BarraProgresso porcentagem='75%' tempo='7.2s'>Álgebra Linear</BarraProgresso>
                 </div>
             </div>
         </div>

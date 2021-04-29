@@ -1,0 +1,153 @@
+#pagina-projetos{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui,-apple-system,BlinkMacSystemFont,Segoe UI, Helvetica Neue,Helvetica,Arial,sans-serif;
+
+    text-align: center;
+
+    background-image: linear-gradient(45deg, #d576282a, #12065559 60%), url('/img/astronomia.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    animation: fadeIn 2.0s both;
+
+    .inicio{
+        background-color:#31313188;
+        padding: 0;
+        flex: 1;
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+            .seccao-1{
+                padding: 50px 20px 50px 20px;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                flex-direction: row;
+                flex: 1;
+
+                border-top: 1px solid #000000ce;
+                border-bottom: 1px solid #000000ce;
+
+                background-image: linear-gradient(to top, #d57528, #1206557a 80%);
+                background-attachment: fixed;
+                background-position: bottom;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            .seccao-2{
+                padding: 50px 20px 50px 20px;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                flex-direction: row;
+                flex: 1;
+
+                border-top: 1px solid #000000ce;
+                border-bottom: 1px solid #000000ce;
+
+                background-image: linear-gradient(to top, #d57528, #1206557a 80%);
+                background-attachment: fixed;
+                background-position: bottom;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+    }
+
+}
+
+#topo{
+    .seta{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 5vh;
+        height: 5vh;
+        padding: 0;
+        margin: 1.5vh 0 0 1vw;
+        transform: rotate(180deg);
+        
+        &:hover,
+        &:focus{
+            transform: scale(1.1) rotate(180deg);
+        }
+        &:active{
+            transform: rotate(180deg) translate(1vh) scale(1.1);
+        }
+    }
+}
+
+#mecanico{
+    padding: 20px 8px;
+    margin: 0 10px 0 0;
+    
+    font-size: 17px;
+    line-height: 18px;
+    border-top: 3px solid #c9c9c9;
+    border-bottom: 3px solid #c9c9c9;
+    border-radius: 24px;
+    cursor: pointer;
+    color: #c9c9c9;
+
+    &:active{
+        transform: scale(1.1);
+    }
+}
+#web{
+    padding: 20px 8px;
+    margin: 0 0 0 10px;
+    
+    font-size: 17px;
+    line-height: 18px;
+    border-top: 3px solid #c9c9c9;
+    border-bottom: 3px solid #c9c9c9;
+    border-radius: 24px;
+    cursor: pointer;
+    color: #c9c9c9;
+
+    &:active{
+        transform: scale(1.1);
+    }
+}
+#matematico{
+    padding: 20px 8px;
+    margin: 0 10px 0 0;
+    
+    font-size: 17px;
+    line-height: 18px;
+    border-top: 3px solid #c9c9c9;
+    border-bottom: 3px solid #c9c9c9;
+    border-radius: 24px;
+    cursor: pointer;
+    color: #c9c9c9;
+
+    &:active{
+        transform: scale(1.1);
+    }
+}
+#docencia{
+    padding: 20px 8px;
+    margin: 0 0 0 10px;
+    
+    font-size: 17px;
+    line-height: 18px;
+    border-top: 3px solid #c9c9c9;
+    border-bottom: 3px solid #c9c9c9;
+    border-radius: 24px;
+    cursor: pointer;
+    color: #c9c9c9;
+
+    &:active{
+        transform: scale(1.1);
+    }
+}

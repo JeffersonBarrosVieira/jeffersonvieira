@@ -6,10 +6,48 @@ var num = 0;
 function Projetos (){
     const router = useRouter();
     const id = router.query.projeto;
-    let conteudo = {"mecanico": <div style={{color: 'red'}}>Apresentação dos Projetos Mecanicos</div>,
-                    "web": <div style={{color: 'red'}}>Apresentação dos Projetos Web</div>,
-                    "matematico": <div style={{color: 'red'}}>Apresentação dos Projetos Matemáticos</div>,
-                    "docente": <div style={{color: 'red'}}>Apresentação dos Projetos à Docência</div>};
+    let conteudo = {"mecanico": <div style={{color: 'red',
+                                            width: '100%',
+                                            borderTop: '1px solid #000000ce',
+                                            borderBottom: '1px solid #000000ce',
+                                            padding: '0',
+                                            height: '0',
+                                            opacity: '0',
+                                            animation: 'aparecer 4s 0.7s ease-out forwards'}}>
+                                    Apresentação dos Projetos Mecanicos
+                                </div>,
+
+                    "web":  <div style={{color: 'red',
+                                        width: '100%',
+                                        borderTop: '1px solid #000000ce',
+                                        borderBottom: '1px solid #000000ce',
+                                        padding: '0',
+                                        height: '0',
+                                        opacity: '0',
+                                        animation: 'aparecer 4s 0.7s ease-out forwards'}}>
+                                Apresentação dos Projetos Web
+                            </div>,
+
+                    "matematico":   <div style={{color: 'red',
+                                                width: '100%',
+                                                borderTop: '1px solid #000000ce',
+                                                borderBottom: '1px solid #000000ce',
+                                                padding: '0',
+                                                height: '0',
+                                                opacity: '0',
+                                                animation: 'aparecer 4s 0.7s ease-out forwards'}}>
+                                        Apresentação dos Projetos Matemáticos
+                                    </div>,
+
+                    "docente":  <div style={{color: 'red',
+                                            width: '100%',
+                                            borderTop: '1px solid #000000ce',
+                                            padding: '0',
+                                            height: '0',
+                                            opacity: '0',
+                                            animation: 'aparecer 4s 0.7s ease-out forwards'}}>
+                                    Apresentação dos Projetos à Docência
+                                </div>};
 
     const[PMecanico, AlterarMecanico] = useState("");
     const[PWeb, AlterarWeb] = useState("");
@@ -37,80 +75,103 @@ function Projetos (){
 
     
 
-    return(
-        <div id="pagina-inicial">
-            <main id="inicio">
-                <a href="../" style={{marginTop: '20px', fontSize: '18px', color: 'white'}}>
-                    Inicio
+    return(<>
+        <header id="topo">
+            <div>
+                <a href="../">
+                    <img className="seta" src="/img/seta2.png"/>
                 </a>
-                <h1 className="title" style={{marginTop: '50px'}}>
-                    MEUS <a href="#conhecer">PROJETOS</a>
-                </h1>
-
-                <div style={{margin: '50px 0', display: 'flex', flexDirection: 'column'}}>
-                    <a id="mecanico" style={{margin: '10px 0 0 0', cursor: 'pointer'}} onClick={ () => (AlterarMecanico(conteudo.mecanico), 
-                                        AlterarWeb(""),
-                                        AlterarMatematico(""),
-                                        AlterarDocente(""))}>
-                        Aba de Projetos Mecânicos
+                
+                <a><h1 className="nome">Jefferson Barros</h1></a>
+                <div className="menu">
+                    <a href="#conhecer" className="card-menu">
+                        <h3>Contato</h3>
                     </a>
+                </div>
+            </div>
+        </header>
+
+        <div id="pagina-projetos">
+            <p id="inicio" style={{width: '0', height: '0'}}></p>
+
+            <main className="inicio">
+
+                
+                    <div className="seccao-1">
+                        <a id="mecanico" onClick={ () => (AlterarMecanico(conteudo.mecanico), 
+                                            AlterarWeb(""),
+                                            AlterarMatematico(""),
+                                            AlterarDocente(""))}>
+                            Projetos Mecânicos
+                        </a>
+
+                        <div style={{width:'calc((10vh + 20vw)/2)',
+                                    height: 'calc((10vh + 20vw)/2)',
+                                    backgroundColor: '#c9c9c9',
+                                    borderRadius: 'calc((10vh + 20vw)/4)',
+                                    margin: '0'}}>
+                            
+                        </div>
+                    </div>
 
                     {PMecanico}
 
-                    <a id="web" style={{margin: '10px 0 0 0', cursor: 'pointer'}} onClick={ () => (AlterarMecanico(""),
-                                        AlterarWeb(conteudo.web),
-                                        AlterarMatematico(""),
-                                        AlterarDocente(""))}>
-                        Aba de Projetos Web
-                    </a>
+                    <div className="seccao-2">
+                        <div style={{width:'calc((10vh + 20vw)/2)',
+                                    height: 'calc((10vh + 20vw)/2)',
+                                    backgroundColor: '#c9c9c9',
+                                    borderRadius: 'calc((10vh + 20vw)/4)',
+                                    margin: '0'}}>
+                            
+                        </div>
+
+                        <a id="web" href="#mecanico" onClick={ () => (AlterarMecanico(""),
+                                            AlterarWeb(conteudo.web),
+                                            AlterarMatematico(""),
+                                            AlterarDocente(""))}>
+                            Projetos Web
+                        </a>
+                    </div>
 
                     {PWeb}
+                    <div className="seccao-1">
+                        <a id="matematico" href="#web" onClick={ () => (AlterarMecanico(""),
+                                            AlterarWeb(""),
+                                            AlterarMatematico(conteudo.matematico),
+                                            AlterarDocente(""))}>
+                            Projetos Matemáticos
+                        </a>
 
-                    <a id="matematico" style={{margin: '10px 0 0 0', cursor: 'pointer'}} onClick={ () => (AlterarMecanico(""),
-                                        AlterarWeb(""),
-                                        AlterarMatematico(conteudo.matematico),
-                                        AlterarDocente(""))}>
-                        Aba de Projetos Matemáticos
-                    </a>
+                        <div style={{width:'calc((10vh + 20vw)/2)',
+                                    height: 'calc((10vh + 20vw)/2)',
+                                    backgroundColor: '#c9c9c9',
+                                    borderRadius: 'calc((10vh + 20vw)/4)',
+                                    margin: '0'}}>
+                            
+                        </div>
+                    </div>
 
                     {PMatematico}
 
-                    <a id="docencia" style={{margin: '10px 0 0 0', cursor: 'pointer'}} onClick={ () => (AlterarMecanico(""),
-                                                        AlterarWeb(""),
-                                                        AlterarMatematico(""),
-                                                        AlterarDocente(conteudo.docente))}>
-                        Aba de Projetos à Docência
-                    </a>
+                    <div className="seccao-2">
+                        <div style={{width:'calc((10vh + 20vw)/2)',
+                                    height: 'calc((10vh + 20vw)/2)',
+                                    backgroundColor: '#c9c9c9',
+                                    borderRadius: 'calc((10vh + 20vw)/4)',
+                                    margin: '0'}}>
+                            
+                        </div>
+
+                        <a id="docencia" href="#matematico" onClick={ () => (AlterarMecanico(""),
+                                                            AlterarWeb(""),
+                                                            AlterarMatematico(""),
+                                                            AlterarDocente(conteudo.docente))}>
+                            Projetos à Docência
+                        </a>
+                    </div>
 
                     {PDocente}
-                </div>
-
-                <div id="conhecer" style={{marginTop: '50px'}}>
-                    <div className="grid">
-                        <div className="frase-A">
-                            "Se você quiser fazer uma torta de maçã a partir do zero,
-                            você deve primeiro inventar o Universo."
-                            <h3>Carl Sagan</h3>
-                        </div>
-                        <div className="frase-B">
-                            "Eu poderia desistir, mas vejo um bom motivo para continuar...
-                            eu adoro as coisas difíceis."
-                            <h3>Camila Bill</h3>
-                        </div>
-                        <div className="frase-C">
-                            "Controle suas condições iniciais e determine dentro de sua fonte de aleatoriedade qual será o seu destino."
-                            <h3>Silvio Antonio Corrêa Junior</h3>
-                        </div>
-                        <div className="frase-D">
-                            "Logo que, numa inovação, nos mostram alguma coisa de antigo, ficamos sossegados."
-                            <h3>Friedrich Nietzsche</h3>
-                        </div>
-                        <div className="frase-E">
-                            "A física é a poesia da natureza. A matemática, o idioma."
-                            <h3>Antonio Gomes Lacerda</h3>
-                        </div>
-                    </div>
-                </div>
+                
                 
                 <div className="fundo2">
                     <div className="conteudo-fundo2">
@@ -131,8 +192,14 @@ function Projetos (){
                     </div>
                 </div>
             </main>
+
+            <footer id="rodape-inicial">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    Developed by <h4>: Jefferson Barros Vieira</h4>.
+                </a>
+            </footer>
         </div>
-    )
+    </>)
 }
 
 export default Projetos;

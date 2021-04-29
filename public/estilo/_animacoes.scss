@@ -91,9 +91,11 @@
 
 @keyframes aparecer {
     0% {
+        opacity: 1;
         height: 0;
     }
     100% {
+        opacity: 1;
         height: 850px;
         flex: 1;
         padding: 20px 0 20px 0;
