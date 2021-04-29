@@ -105,10 +105,10 @@ function Projetos (){
                             Projetos Mecânicos
                         </a>
 
-                        <div style={{width:'calc((10vh + 20vw)/2)',
-                                    height: 'calc((10vh + 20vw)/2)',
+                        <div style={{width:'165px',
+                                    height: '165px',
                                     backgroundColor: '#c9c9c9',
-                                    borderRadius: 'calc((10vh + 20vw)/4)',
+                                    borderRadius: '82.5px',
                                     margin: '0'}}>
                             
                         </div>
@@ -117,10 +117,10 @@ function Projetos (){
                     {PMecanico}
 
                     <div className="seccao-2">
-                        <div style={{width:'calc((10vh + 20vw)/2)',
-                                    height: 'calc((10vh + 20vw)/2)',
+                        <div style={{width:'165px',
+                                    height: '165px',
                                     backgroundColor: '#c9c9c9',
-                                    borderRadius: 'calc((10vh + 20vw)/4)',
+                                    borderRadius: '82.5px',
                                     margin: '0'}}>
                             
                         </div>
@@ -142,10 +142,10 @@ function Projetos (){
                             Projetos Matemáticos
                         </a>
 
-                        <div style={{width:'calc((10vh + 20vw)/2)',
-                                    height: 'calc((10vh + 20vw)/2)',
+                        <div style={{width:'165px',
+                                    height: '165px',
                                     backgroundColor: '#c9c9c9',
-                                    borderRadius: 'calc((10vh + 20vw)/4)',
+                                    borderRadius: '82.5px',
                                     margin: '0'}}>
                             
                         </div>
@@ -154,10 +154,10 @@ function Projetos (){
                     {PMatematico}
 
                     <div className="seccao-2">
-                        <div style={{width:'calc((10vh + 20vw)/2)',
-                                    height: 'calc((10vh + 20vw)/2)',
+                        <div style={{width:'165px',
+                                    height: '165px',
                                     backgroundColor: '#c9c9c9',
-                                    borderRadius: 'calc((10vh + 20vw)/4)',
+                                    borderRadius: '82.5px',
                                     margin: '0'}}>
                             
                         </div>
