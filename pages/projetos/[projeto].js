@@ -125,7 +125,7 @@ function Projetos (){
                             
                         </div>
 
-                        <a id="web" href="#mecanico" onClick={ () => (AlterarMecanico(""),
+                        <a id="web" onClick={ () => (AlterarMecanico(""),
                                             AlterarWeb(conteudo.web),
                                             AlterarMatematico(""),
                                             AlterarDocente(""))}>
@@ -135,7 +135,7 @@ function Projetos (){
 
                     {PWeb}
                     <div className="seccao-1">
-                        <a id="matematico" href="#web" onClick={ () => (AlterarMecanico(""),
+                        <a id="matematico" onClick={ () => (AlterarMecanico(""),
                                             AlterarWeb(""),
                                             AlterarMatematico(conteudo.matematico),
                                             AlterarDocente(""))}>
@@ -162,7 +162,7 @@ function Projetos (){
                             
                         </div>
 
-                        <a id="docencia" href="#matematico" onClick={ () => (AlterarMecanico(""),
+                        <a id="docencia" onClick={ () => (AlterarMecanico(""),
                                                             AlterarWeb(""),
                                                             AlterarMatematico(""),
                                                             AlterarDocente(conteudo.docente))}>
