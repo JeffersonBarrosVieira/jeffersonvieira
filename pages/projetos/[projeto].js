@@ -108,6 +108,9 @@ function Projetos (){
                         <div style={{width:'165px',
                                     height: '165px',
                                     backgroundColor: '#c9c9c9',
+                                    backgroundImage: "url('/img/robo.gif')",
+                                    backgroundSize: 'contain',
+                                    backgroundRepeat: 'no-repeat',
                                     borderRadius: '82.5px',
                                     margin: '0'}}>
                             
@@ -120,6 +123,10 @@ function Projetos (){
                         <div style={{width:'165px',
                                     height: '165px',
                                     backgroundColor: '#c9c9c9',
+                                    backgroundImage: "url('/img/computador.gif')",
+                                    backgroundSize: '170% 120%',
+                                    backgroundRepeat: 'no-repeat',
+                                    backgroundPosition: 'center',
                                     borderRadius: '82.5px',
                                     margin: '0'}}>
                             
@@ -145,6 +152,9 @@ function Projetos (){
                         <div style={{width:'165px',
                                     height: '165px',
                                     backgroundColor: '#c9c9c9',
+                                    backgroundImage: "url('/img/matematica.gif')",
+                                    backgroundSize: '100% 100%',
+                                    backgroundRepeat: 'no-repeat',
                                     borderRadius: '82.5px',
                                     margin: '0'}}>
                             
@@ -157,6 +167,9 @@ function Projetos (){
                         <div style={{width:'165px',
                                     height: '165px',
                                     backgroundColor: '#c9c9c9',
+                                    backgroundImage: "url('/img/docente.gif')",
+                                    backgroundSize: '180% 100%',
+                                    backgroundRepeat: 'no-repeat',
                                     borderRadius: '82.5px',
                                     margin: '0'}}>
                             
