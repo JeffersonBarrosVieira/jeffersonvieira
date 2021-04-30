@@ -92,12 +92,13 @@ function Projetos (){
         </header>
 
         <div id="pagina-projetos">
-            <p id="inicio" style={{width: '0', height: '0'}}></p>
+            <p id="inicio" style={{padding: '0', margin:'0', width: '0', height: '0'}}></p>
+            <p id="p-mecanico" style={{padding: '0', margin:'0', width: '0', height: '0'}}></p>
 
             <main className="inicio">
 
                 
-                    <div className="seccao-1">
+                    <div className="seccao-1" style={{paddingTop: 'calc(8vh + 40px)'}}>
                         <a id="mecanico" onClick={ () => (AlterarMecanico(conteudo.mecanico), 
                                             AlterarWeb(""),
                                             AlterarMatematico(""),
@@ -118,6 +119,8 @@ function Projetos (){
                     </div>
 
                     {PMecanico}
+
+                    <p id="p-web" style={{padding: '0', margin:'0', width: '0', height: '0'}}></p>
 
                     <div className="seccao-2">
                         <div style={{width:'165px',
@@ -141,6 +144,9 @@ function Projetos (){
                     </div>
 
                     {PWeb}
+
+                    <p id="p-matematico" style={{padding: '0', margin:'0', width: '0', height: '0'}}></p>
+
                     <div className="seccao-1">
                         <a id="matematico" onClick={ () => (AlterarMecanico(""),
                                             AlterarWeb(""),
@@ -162,6 +168,8 @@ function Projetos (){
                     </div>
 
                     {PMatematico}
+
+                    <p id="p-docencia" style={{padding: '0', margin:'0', width: '0', height: '0'}}></p>
 
                     <div className="seccao-2">
                         <div style={{width:'165px',
@@ -187,21 +195,13 @@ function Projetos (){
                 
                 
                 <div className="fundo2">
-                    <div className="conteudo-fundo2">
+                    <div className="conteudo-fundo2" style={{padding: '20px 0 10px 0'}}>
                         <a href="#inicio" onClick={ () => (AlterarMecanico(""),
                                                             AlterarWeb(""),
                                                             AlterarMatematico(""),
                                                             AlterarDocente(""))}>
                             <img className="seta" src="/img/seta.png"/>
                         </a>
-                        <div className="box-engrenagem">
-                            <a href="#inicio" onClick={ () => (AlterarMecanico(""),
-                                                            AlterarWeb(""),
-                                                            AlterarMatematico(""),
-                                                            AlterarDocente(""))}>
-                                <img className="engrenagem" src="/img/engrenagem.png"/>
-                            </a>
-                        </div>
                     </div>
                 </div>
             </main>
