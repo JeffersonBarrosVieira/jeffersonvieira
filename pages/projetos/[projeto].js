@@ -1,6 +1,11 @@
 import { useRouter } from 'next/router';
 import React, {useState} from 'react';
 
+import Mecanico from './mecanico/mecanico';
+import Web from './web/web';
+import Matematico from './matematica/matematico';
+import Docencia from './docencia/docencia';
+
 var num = 0;
 
 function Projetos (){
@@ -14,7 +19,25 @@ function Projetos (){
                                             height: '0',
                                             opacity: '0',
                                             animation: 'aparecer 4s 0.7s ease-out forwards'}}>
-                                    Apresentação dos Projetos Mecanicos
+                                    <Mecanico/>
+                                    <div style={{padding: '20px 0 0 0',
+                                                width: '100%',
+                                                margin: '0',
+                                                alignItems: 'center',
+                                                justifyContent: 'center',
+                                                flex: '1',
+                                                display: 'flex',
+                                                flexDirection: 'column'}}>
+                                        <a href="#inicio" onClick={ () => (AlterarMecanico(""),
+                                                                            AlterarWeb(""),
+                                                                            AlterarMatematico(""),
+                                                                            AlterarDocente(""))}>
+                                            <img style={{width: '50px',
+                                                        height: '50px',
+                                                        margin: '30px 0 -10px 0',
+                                                        animation: 'bounce2 2s infinite'}} src="/img/seta.png"/>
+                                        </a>
+                                    </div>
                                 </div>,
 
                     "web":  <div style={{color: '#c9c9c9',
@@ -25,7 +48,26 @@ function Projetos (){
                                         height: '0',
                                         opacity: '0',
                                         animation: 'aparecer 4s 0.7s ease-out forwards'}}>
-                                Apresentação dos Projetos Web
+
+                                <Web/>
+                                <div style={{padding: '20px 0 0 0',
+                                            width: '100%',
+                                            margin: '0',
+                                            alignItems: 'center',
+                                            justifyContent: 'center',
+                                            flex: '1',
+                                            display: 'flex',
+                                            flexDirection: 'column'}}>
+                                    <a href="#p-web" onClick={ () => (AlterarMecanico(""),
+                                                                        AlterarWeb(""),
+                                                                        AlterarMatematico(""),
+                                                                        AlterarDocente(""))}>
+                                        <img style={{width: '50px',
+                                                    height: '50px',
+                                                    margin: '30px 0 -10px 0',
+                                                    animation: 'bounce2 2s infinite'}} src="/img/seta.png"/>
+                                    </a>
+                                </div>
                             </div>,
 
                     "matematico":   <div style={{color: '#c9c9c9',
@@ -36,7 +78,25 @@ function Projetos (){
                                                 height: '0',
                                                 opacity: '0',
                                                 animation: 'aparecer 4s 0.7s ease-out forwards'}}>
-                                        Apresentação dos Projetos Matemáticos
+                                        <Matematico/>
+                                        <div style={{padding: '20px 0 0 0',
+                                                    width: '100%',
+                                                    margin: '0',
+                                                    alignItems: 'center',
+                                                    justifyContent: 'center',
+                                                    flex: '1',
+                                                    display: 'flex',
+                                                    flexDirection: 'column'}}>
+                                            <a href="#p-matematico" onClick={ () => (AlterarMecanico(""),
+                                                                                AlterarWeb(""),
+                                                                                AlterarMatematico(""),
+                                                                                AlterarDocente(""))}>
+                                                <img style={{width: '50px',
+                                                            height: '50px',
+                                                            margin: '30px 0 -10px 0',
+                                                            animation: 'bounce2 2s infinite'}} src="/img/seta.png"/>
+                                            </a>
+                                        </div>
                                     </div>,
 
                     "docente":  <div style={{color: '#c9c9c9',
@@ -46,7 +106,25 @@ function Projetos (){
                                             height: '0',
                                             opacity: '0',
                                             animation: 'aparecer 4s 0.7s ease-out forwards'}}>
-                                    Apresentação dos Projetos à Docência
+                                    <Docencia/>
+                                    <div style={{padding: '20px 0 0 0',
+                                                width: '100%',
+                                                margin: '0',
+                                                alignItems: 'center',
+                                                justifyContent: 'center',
+                                                flex: '1',
+                                                display: 'flex',
+                                                flexDirection: 'column'}}>
+                                        <a href="#p-docencia" onClick={ () => (AlterarMecanico(""),
+                                                                            AlterarWeb(""),
+                                                                            AlterarMatematico(""),
+                                                                            AlterarDocente(""))}>
+                                            <img style={{width: '50px',
+                                                        height: '50px',
+                                                        margin: '30px 0 -10px 0',
+                                                        animation: 'bounce2 2s infinite'}} src="/img/seta.png"/>
+                                        </a>
+                                    </div>
                                 </div>};
 
     const[PMecanico, AlterarMecanico] = useState("");
@@ -192,18 +270,6 @@ function Projetos (){
                     </div>
 
                     {PDocente}
-                
-                
-                <div className="fundo2">
-                    <div className="conteudo-fundo2" style={{padding: '20px 0 10px 0'}}>
-                        <a href="#inicio" onClick={ () => (AlterarMecanico(""),
-                                                            AlterarWeb(""),
-                                                            AlterarMatematico(""),
-                                                            AlterarDocente(""))}>
-                            <img className="seta" src="/img/seta.png"/>
-                        </a>
-                    </div>
-                </div>
             </main>
 
             <footer id="rodape-inicial">

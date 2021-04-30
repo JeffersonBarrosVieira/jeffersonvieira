@@ -1,3 +1,4 @@
+
 #pagina-inicial{
     min-height: 100vh;
     display: flex;
@@ -15,6 +16,22 @@
     background-repeat: no-repeat;
 
     animation: fadeIn 2.0s both;
+
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-flex-direction:column;
+    -ms-flex-direction:column;
+    flex-direction:column;
+    -webkit-box-pack:center;
+    -webkit-justify-content:center;
+    -ms-flex-pack:center;
+    justify-content:center;
+    -webkit-align-items:center;
+    -webkit-box-align:center;
+    -ms-flex-align:center;
+    align-items:center;
 }
 
 #topo {
@@ -67,9 +84,9 @@
     }
 
     .card-menu {
-        margin: 0 0.75vw;
-        height: calc(((2.5vh + 1.25vw)/2) + 2*((2vh + 1vw)/2));
-        padding: calc((1.5vh + 0.75vw)/2);
+        margin: 0 0.7vw;
+        height: calc(((2.4vh + 1.2vw)/2) + 2*((1.8vh + 0.75vw)/2));
+        padding: calc((1.2vh + 0.6vw)/2) calc((1.3vh + 0.6vw)/2);
         justify-content: center;
         align-items:center ;
         // text-align: left;

@@ -8,13 +8,29 @@
 
     text-align: center;
 
-    background-image: linear-gradient(45deg, #d576282a, #12065559 60%), url('/img/fundo2.png');
+    background-image: linear-gradient(45deg, #d576282a, #12065559 60%), url('/img/astronomia1.png');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
     animation: fadeIn 2.0s both;
+
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-flex-direction:column;
+    -ms-flex-direction:column;
+    flex-direction:column;
+    -webkit-box-pack:center;
+    -webkit-justify-content:center;
+    -ms-flex-pack:center;
+    justify-content:center;
+    -webkit-align-items:center;
+    -webkit-box-align:center;
+    -ms-flex-align:center;
+    align-items:center;
 
     .inicio{
         background-color:#31313188;
@@ -45,7 +61,9 @@
                 background-repeat: no-repeat;
 
                 &:hover{
-                    background-image: linear-gradient(to bottom, #1206557a, #1206557a 20%);
+                    transform: scale(1);
+                    background-image: linear-gradient(to top, #d576282f, #1206557a 70%);
+                    
                 }
             }
             .seccao-2{
@@ -67,9 +85,31 @@
                 background-repeat: no-repeat;
 
                 &:hover{
-                    background-image: linear-gradient(to bottom, #1206557a, #1206557a 90%);
+                    transform: scale(1);
+                    background-image: linear-gradient(to top, #d576282f, #1206557a 70%);
                 }
             }
+    }
+
+    .conteudo-fundo2 {
+        width: 100%;
+        // border-top: 2px solid #000000ce;
+        margin: 0;
+        padding: 30px 0 30px 0;
+        
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        display: flex; 
+        flex-direction: column;
+    
+        .seta {
+            width: 50px;
+            height: 50px;
+            margin: 20px 0;
+    
+            animation: bounce2 2s infinite;
+        }
     }
 
 }
@@ -110,7 +150,10 @@
     cursor: pointer;
     color: #c9c9c9;
 
+    animation: esmaecer 4s 1s ease-in-out infinite;
+
     &:active{
+        animation: none;
         transform: scale(0.95);
     }
 }
@@ -129,7 +172,11 @@
     cursor: pointer;
     color: #c9c9c9;
 
+    animation: esmaecer 4s 2s ease-in-out infinite;
+
+
     &:active{
+        animation: none;
         transform: scale(0.95);
     }
 }
@@ -148,7 +195,10 @@
     cursor: pointer;
     color: #c9c9c9;
 
+    animation: esmaecer 4s 3s ease-in-out infinite;
+
     &:active{
+        animation: none;
         transform: scale(0.95);
     }
 }
@@ -167,7 +217,10 @@
     cursor: pointer;
     color: #c9c9c9;
 
+    animation: esmaecer 4s 4s ease-in-out infinite;
+
     &:active{
+        animation: none;
         transform: scale(0.95);
     }
 }
