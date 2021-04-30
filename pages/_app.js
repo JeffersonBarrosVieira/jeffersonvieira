@@ -25,6 +25,11 @@ function App({ Component, pageProps }) {
         <link rel="preload" href="/img/astronomia.png" as="image"/>
         <link rel="preload" href="/img/arvore.jpg" as="image"/>
 
+        <link rel="preload" href="/img/matematica.gif" as="image"/>
+        <link rel="preload" href="/img/docente.gif" as="image"/>
+        <link rel="preload" href="/img/computador.gif" as="image"/>
+        <link rel="preload" href="/img/robo.gif" as="image"/>
+
         <link rel="preload" href="/img/card/Fundo.png" as="image"/>
         <link rel="preload" href="/img/card/Amarela_baixo.png" as="image"/>
         <link rel="preload" href="/img/card/Amarela_direita.png" as="image"/>
