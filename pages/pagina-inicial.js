@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import Link from 'next/link';
 
 import Sobre from './conheca-me/sobre';
 import Habilidades from './conheca-me/habilidades';
@@ -25,9 +26,11 @@ const PaginaInicial = () => {
                         <a href="#conhecer" className="card-menu" onClick={ () => AlterarConteudo(conteudo[2]) }>
                             <h3>Projetos</h3>
                         </a>
-                        <a href="/contato" className="card-menu" onClick={ () => AlterarConteudo(conteudo[3]) }>
-                            <h3>Contato</h3>
-                        </a>
+                        <Link href="/contato" > 
+                            <a className="card-menu" onClick={ () => AlterarConteudo(conteudo[3]) }>
+                                <h3>Contato</h3>
+                            </a>
+                        </Link>
                     </div>
                 </div>
             </header>

@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 import React, {useState} from 'react';
 
 import Mecanico from './mecanico/mecanico';
@@ -156,10 +157,11 @@ function Projetos (){
     return(<>
         <header id="topo">
             <div>
-                <a href="../">
-                    <img className="seta" src="/img/seta2.png"/>
-                </a>
-                
+                <Link href="../">
+                    <a>
+                        <img className="seta" src="/img/seta2.png"/>
+                    </a>
+                </Link>
                 <a><h1 className="nome">Jefferson Barros</h1></a>
                 <div className="menu">
                     <a href="/contato" className="card-menu">

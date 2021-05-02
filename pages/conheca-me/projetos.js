@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 function Card(props) {
     return(
@@ -148,50 +149,54 @@ function Projetos() {
     return(
         <div id="projetos">
             <div className="grid-projetos">    
-                <a className="a-1" href="/projetos/mecanico#p-mecanico">
-                    <Card diretorio="url('../img/card/icones/mecanico.png')"
-                        incremento="2"
-                        title="Projetos Mecânicos"> 
-                        Clique nesse card para ver meus desenvolvimentos de mecanismos ou equipamentos. Abordo: <br/><br/>
-                        -Dimensionamento;<br/>
-                        -Análise mecânica/elétrica;<br/>
-                        -Plantas estruturais;<br/>
-                        -Modelagem matemática.
-                    </Card>
-                </a>
-
-                <a className="a-2" href="/projetos/web#p-web">
-                    <Card diretorio="url('../img/card/icones/web.png')"
-                        incremento="3"
-                        title="Projetos Web"> 
-                        Clique nesse card para contemplar meus desenvolvimentos web que abarcam em geral a utilização das linguagens de programação: <br/><br/>
-                        -HTML/Css/Sass;&nbsp; &nbsp;-C++; <br/>
-                        -Python;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-JavaScript.
-                    </Card>
-                </a>
-
-                <a className="a-3" href="/projetos/matematico#p-matematico">
-                    <Card diretorio="url('../img/card/icones/matematica.png')"
-                        incremento="4"
-                        title="Projetos Matemático"> 
-                        Clique nesse card para visualizar elaborações de modelos matemáticos em cima de situações físicas. Abordo: <br/><br/>
-                        -Situações/Problemas Físicos;<br/>
-                        -Ferramentas tecnológicas; <br/>
-                        -Modelagem matemática;
-                    </Card>
-                </a>
-
-                <a className="a-4" href="/projetos/docencia#p-docencia">
-                    <Card diretorio="url('../img/card/icones/docencia.png')"
-                        incremento="5"
-                        title="Projetos à Docência"> 
-                        Clique nesse card para apreciar atividades aplicadas em escolas de Ensino Médio. Abordo: <br/><br/>
-                        -Práticas pedagógicas;<br/>
-                        -Pesquisa científica fora da escola; <br/>
-                        -Compreensão da finalidade do conteúdo na prática.
-                    </Card>
-                </a>
-
+                <Link href="/projetos/mecanico#p-mecanico">
+                    <a className="a-1">
+                        <Card diretorio="url('../img/card/icones/mecanico.png')"
+                            incremento="2"
+                            title="Projetos Mecânicos"> 
+                            Clique nesse card para ver meus desenvolvimentos de mecanismos ou equipamentos. Abordo: <br/><br/>
+                            -Dimensionamento;<br/>
+                            -Análise mecânica/elétrica;<br/>
+                            -Plantas estruturais;<br/>
+                            -Modelagem matemática.
+                        </Card>
+                    </a>
+                </Link>
+                <Link href="/projetos/web#p-web">
+                    <a className="a-2">
+                        <Card diretorio="url('../img/card/icones/web.png')"
+                            incremento="3"
+                            title="Projetos Web"> 
+                            Clique nesse card para contemplar meus desenvolvimentos web que abarcam em geral a utilização das linguagens de programação: <br/><br/>
+                            -HTML/Css/Sass;&nbsp; &nbsp;-C++; <br/>
+                            -Python;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-JavaScript.
+                        </Card>
+                    </a>
+                </Link>
+                <Link href="/projetos/matematico#p-matematico">
+                    <a className="a-3">
+                        <Card diretorio="url('../img/card/icones/matematica.png')"
+                            incremento="4"
+                            title="Projetos Matemático"> 
+                            Clique nesse card para visualizar elaborações de modelos matemáticos em cima de situações físicas. Abordo: <br/><br/>
+                            -Situações/Problemas Físicos;<br/>
+                            -Ferramentas tecnológicas; <br/>
+                            -Modelagem matemática;
+                        </Card>
+                    </a>
+                </Link>]
+                <Link href="/projetos/docencia#p-docencia">
+                    <a className="a-4">
+                        <Card diretorio="url('../img/card/icones/docencia.png')"
+                            incremento="5"
+                            title="Projetos à Docência"> 
+                            Clique nesse card para apreciar atividades aplicadas em escolas de Ensino Médio. Abordo: <br/><br/>
+                            -Práticas pedagógicas;<br/>
+                            -Pesquisa científica fora da escola; <br/>
+                            -Compreensão da finalidade do conteúdo na prática.
+                        </Card>
+                    </a>
+                </Link>
             </div>
         </div>
     )

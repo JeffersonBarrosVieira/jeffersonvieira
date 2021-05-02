@@ -1,5 +1,6 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
+import Link from 'next/link';
 
 export default function Contato(){
     
@@ -53,9 +54,11 @@ export default function Contato(){
     return(<>
         <header id="topo">
             <div>
-                <a href="../">
-                    <img className="seta" src="/img/seta2.png"/>
-                </a>
+                <Link href="../">
+                    <a>
+                        <img className="seta" src="/img/seta2.png"/>
+                    </a>
+                </Link>
                 
                 <a><h1 className="nome">Jefferson Barros</h1></a>
             </div>
