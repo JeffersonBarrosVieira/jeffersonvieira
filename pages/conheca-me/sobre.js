@@ -10,7 +10,7 @@ const Sobre = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card-descricao">
+                <div style={{cursor: 'default'}} className="card-descricao">
                     <h3>Minha História</h3>
                     <p>
                         Estudante de Física do Instituto Federal de Educação,

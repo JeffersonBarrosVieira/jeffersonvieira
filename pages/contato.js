@@ -91,16 +91,16 @@ export default function Contato(){
                     </div>
 
                     <div className="midia-social">
-                        <a href="#" className="circulo-icon">
+                        <a style={{cursor: 'not-allowed'}} href="#" className="circulo-icon">
                             <i className="fa fa-facebook-official" aria-hidden="true"></i>
                         </a>
-                        <a href="#" className="circulo-icon">
+                        <a style={{cursor: 'not-allowed'}} href="#" className="circulo-icon">
                             <i className="fa fa-twitter" aria-hidden="true"></i>
                         </a>
-                        <a href="#" className="circulo-icon">
+                        <a style={{cursor: 'not-allowed'}} href="#" className="circulo-icon">
                             <i className="fa fa-instagram" aria-hidden="true"></i>
                         </a>
-                        <a href="#" className="circulo-icon">
+                        <a style={{cursor: 'not-allowed'}} href="#" className="circulo-icon">
                             <i className="fa fa-linkedin" aria-hidden="true"></i>
                         </a>
                     </div>
