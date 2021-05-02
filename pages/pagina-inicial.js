@@ -25,7 +25,7 @@ const PaginaInicial = () => {
                         <a href="#conhecer" className="card-menu" onClick={ () => AlterarConteudo(conteudo[2]) }>
                             <h3>Projetos</h3>
                         </a>
-                        <a href="#conhecer" className="card-menu" onClick={ () => AlterarConteudo(conteudo[3]) }>
+                        <a href="/contato" className="card-menu" onClick={ () => AlterarConteudo(conteudo[3]) }>
                             <h3>Contato</h3>
                         </a>
                     </div>

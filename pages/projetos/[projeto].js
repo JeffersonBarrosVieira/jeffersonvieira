@@ -162,12 +162,13 @@ function Projetos (){
                 
                 <a><h1 className="nome">Jefferson Barros</h1></a>
                 <div className="menu">
-                    <a href="#conhecer" className="card-menu">
+                    <a href="/contato" className="card-menu">
                         <h3>Contato</h3>
                     </a>
                 </div>
             </div>
         </header>
+
 
         <div id="pagina-projetos">
             <p id="inicio" style={{padding: '0', margin:'0', width: '0', height: '0'}}></p>
