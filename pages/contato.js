@@ -84,7 +84,7 @@ export default function Contato(){
 
                     <div className="icon-text">
                         <i className="fa fa-map-marker" aria-hidden="true"></i>
-                        <span>Imperatriz, Maranhão</span>
+                        <span>Imperatriz-MA</span>
                     </div>
 
                     <div className="midia-social">
