@@ -50,7 +50,7 @@ function BarraProgresso (props) {
 function Habilidades() {
     return(
         <div id="habilidades">
-            <div className="grid-habilidades">    
+            <div className="grid-habilidades" style={{cursor: 'default'}}>    
                 <div className="card-descricao">
                     <h3>Programação</h3>
                     <BarraProgresso porcentagem='90%' tempo='5s'>HTML</BarraProgresso>
