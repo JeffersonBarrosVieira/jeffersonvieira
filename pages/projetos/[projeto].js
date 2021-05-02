@@ -164,9 +164,11 @@ function Projetos (){
                 </Link>
                 <a><h1 className="nome">Jefferson Barros</h1></a>
                 <div className="menu">
-                    <a href="/contato" className="card-menu">
-                        <h3>Contato</h3>
-                    </a>
+                    <Link href="/contato">
+                        <a className="card-menu">
+                            <h3>Contato</h3>
+                        </a>
+                    </Link>
                 </div>
             </div>
         </header>
