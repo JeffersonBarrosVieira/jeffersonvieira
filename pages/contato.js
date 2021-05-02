@@ -84,7 +84,7 @@ export default function Contato(){
 
                     <div className="icon-text">
                         <i className="fa fa-map-marker" aria-hidden="true"></i>
-                        <span>Rua F-3, Jardim Tropical, Imperatriz-MA</span>
+                        <span>Imperatriz, Maranhão</span>
                     </div>
 
                     <div className="midia-social">
