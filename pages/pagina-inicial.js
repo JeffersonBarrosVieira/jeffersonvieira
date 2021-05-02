@@ -37,7 +37,7 @@ const PaginaInicial = () => {
 
             <main id="inicio">
                 <h1 className="title">
-                    JEFFERSON <a href="#conhecer" onClick={ () => AlterarConteudo(conteudo[0]) }>BARROS</a>
+                    JEFFERSON <Link href="#conhecer"><a onClick={ () => AlterarConteudo(conteudo[0]) }>BARROS</a></Link>
                 </h1>
 
                 <p className="descricao">
