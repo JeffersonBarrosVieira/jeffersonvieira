@@ -3,6 +3,8 @@ body {
     padding: 0;
     margin: 0;
     background-color: #f4f4f4;
+    width: 100vw !important;
+    min-height: 100vh !important;
 
     overflow-x: hidden !important;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
