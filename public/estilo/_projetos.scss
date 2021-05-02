@@ -36,27 +36,28 @@
             opacity: 1;
             text-decoration: none;
             margin: 0 5px;
+            transition: all 2s ease-in-out;
 
             &:hover,
             &:focus{
-                transform: rotate(15deg) scale(1);
+                transform: rotate(15deg) scale(1) !important;
             }
             &:active {
-                transform: rotate(15deg) scale(1.1);
+                transform: rotate(15deg) scale(1.1) !important;
             }
         }
 
         .a-1{
-            animation: oscilar 4s 8s infinite;
+            animation: oscilar 4s 8s infinite ease-out;
         }
         .a-2{
-            animation: oscilar 4s 9s infinite;
+            animation: oscilar 4s 9s infinite ease-out;
         }
         .a-3{
-            animation: oscilar 4s 10s infinite;
+            animation: oscilar 4s 10s infinite ease-out;
         }
         .a-4{
-            animation: oscilar 4s 11s infinite;
+            animation: oscilar 4s 11s infinite ease-out;
         }
     }
 }

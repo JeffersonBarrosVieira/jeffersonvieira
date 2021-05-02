@@ -142,6 +142,8 @@
         font-weight: 100;
         letter-spacing: 1px;
 
+        animation: fadeIn 1.0s 0.3s both;
+
         a {
             padding: 15px 0 0 0;
             color: #0070f3;
@@ -164,6 +166,7 @@
         font-size: 18px;
         font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
         Bitstream Vera Sans Mono, Courier New, monospace;
+        animation: fadeIn 1.0s 0.6s both;
     }
 
     .descricao {
@@ -173,6 +176,7 @@
         line-height: 24px;
         font-size: 24px;
         color: #d4d4d4;
+        animation: fadeIn 1.0s 0.6s both;
 
         a {
             text-decoration: none;
