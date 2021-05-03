@@ -1,36 +1,36 @@
-// #pagina-projetos{
-//     min-height: 100vh;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-//     font-family: system-ui,-apple-system,BlinkMacSystemFont,Segoe UI, Helvetica Neue,Helvetica,Arial,sans-serif;
+#pagina-projetos{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui,-apple-system,BlinkMacSystemFont,Segoe UI, Helvetica Neue,Helvetica,Arial,sans-serif;
 
-//     text-align: center;
+    text-align: center;
 
-//     background-image: url('/img/astronomia1.png');
-//     background-size: cover;
-//     background-position: left;
-//     background-attachment: fixed;
-//     background-repeat: no-repeat;
+    background-image: url('/img/astronomia1.png');
+    background-size: cover;
+    background-position: left;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 
-//     animation: fadeIn 2.0s both;
+    animation: fadeIn 2.0s both;
 
-//     display:-webkit-box;
-//     display:-webkit-flex;
-//     display:-ms-flexbox;
-//     display:flex;
-//     -webkit-flex-direction:column;
-//     -ms-flex-direction:column;
-//     flex-direction:column;
-//     -webkit-box-pack:center;
-//     -webkit-justify-content:center;
-//     -ms-flex-pack:center;
-//     justify-content:center;
-//     -webkit-align-items:center;
-//     -webkit-box-align:center;
-//     -ms-flex-align:center;
-//     align-items:center;
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-flex-direction:column;
+    -ms-flex-direction:column;
+    flex-direction:column;
+    -webkit-box-pack:center;
+    -webkit-justify-content:center;
+    -ms-flex-pack:center;
+    justify-content:center;
+    -webkit-align-items:center;
+    -webkit-box-align:center;
+    -ms-flex-align:center;
+    align-items:center;
 
 //     .inicio{
 //         background-color:#31313188;
@@ -112,7 +112,7 @@
 //         }
 //     }
 
-// }
+}
 
 #topo{
     .seta{
