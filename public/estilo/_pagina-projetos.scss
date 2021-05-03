@@ -114,26 +114,26 @@
 
 // }
 
-// #topo{
-//     .seta{
-//         position: fixed;
-//         top: 0;
-//         left: 0;
-//         width: 5vh;
-//         height: 5vh;
-//         padding: 0;
-//         margin: 1.5vh 0 0 1vw;
-//         transform: rotate(180deg);
+#topo{
+    .seta{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 5vh;
+        height: 5vh;
+        padding: 0;
+        margin: 1.5vh 0 0 1vw;
+        transform: rotate(180deg);
         
-//         &:hover,
-//         &:focus{
-//             transform: scale(1.1) rotate(180deg);
-//         }
-//         &:active{
-//             transform: rotate(180deg) translate(1vh) scale(1.1);
-//         }
-//     }
-// }
+        &:hover,
+        &:focus{
+            transform: scale(1.1) rotate(180deg);
+        }
+        &:active{
+            transform: rotate(180deg) translate(1vh) scale(1.1);
+        }
+    }
+}
 
 #mecanico{
     padding: 20px 2px;
