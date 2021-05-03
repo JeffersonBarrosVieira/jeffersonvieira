@@ -152,8 +152,12 @@
 
     animation: esmaecer 4s 1s ease-in-out infinite;
 
+    &:hover{
+        opacity: 1 !important;
+    }
+
     &:active{
-        animation: none;
+        opacity: 1 !important;
         transform: scale(0.95);
     }
 }
@@ -174,9 +178,12 @@
 
     animation: esmaecer 4s 2s ease-in-out infinite;
 
+    &:hover{
+        opacity: 1 !important;
+    }
 
     &:active{
-        animation: none;
+        opacity: 1 !important;
         transform: scale(0.95);
     }
 }
@@ -197,8 +204,12 @@
 
     animation: esmaecer 4s 3s ease-in-out infinite;
 
+    &:hover{
+        opacity: 1 !important;
+    }
+
     &:active{
-        animation: none;
+        opacity: 1 !important;
         transform: scale(0.95);
     }
 }
@@ -219,8 +230,12 @@
 
     animation: esmaecer 4s 4s ease-in-out infinite;
 
+    &:hover{
+        opacity: 1 !important;
+    }
+
     &:active{
-        animation: none;
+        opacity: 1 !important;
         transform: scale(0.95);
     }
 }
