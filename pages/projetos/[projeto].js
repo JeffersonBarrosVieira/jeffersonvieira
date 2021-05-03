@@ -21,7 +21,7 @@ export default function Projetos (){
                                             opacity: '0',
                                             animation: 'aparecer1 4s 0.7s ease-out forwards'}}>
                                     <Mecanico/>
-                                    {/* <div style={{padding: '0 0 0 0',
+                                    <div style={{padding: '0 0 0 0',
                                                 width: '100%',
                                                 margin: '0',
                                                 alignItems: 'center',
@@ -42,7 +42,7 @@ export default function Projetos (){
                                                         height: '50px',
                                                         animation: 'bounce2 2s infinite'}} src="/img/seta2.png"/>
                                         </a>
-                                    </div> */}
+                                    </div>
                                 </div>,
 
                     "web":  <div style={{color: '#c9c9c9',
