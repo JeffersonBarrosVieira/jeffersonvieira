@@ -20,7 +20,7 @@ function Molde(props){
 const Mecanico = () => {
     return(<>
         <div id="molde">
-            <Molde titulo="Pojeto 1" imagem="/img/projetos/mecanico/braço-robotico.jpg">
+            {/* <Molde titulo="Pojeto 1" imagem="/img/projetos/mecanico/braço-robotico.jpg">
                 Resumo do projeto
             </Molde>
             <Molde titulo="Pojeto 4" imagem="/img/projetos/mecanico/braço-robotico.jpg">
@@ -28,7 +28,7 @@ const Mecanico = () => {
             </Molde>
             <Molde titulo="Pojeto 1" imagem="/img/projetos/mecanico/braço-robotico.jpg">
                 Resumo do projeto
-            </Molde>
+            </Molde> */}
         </div>
     </>)
 }
