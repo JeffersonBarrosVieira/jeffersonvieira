@@ -9,7 +9,7 @@ import Docencia from './docencia/docencia';
 
 var num = 0;
 
-function Projetos (){
+export default function Projetos (){
     const router = useRouter();
     const id = router.query.projeto;
     let conteudo = {"mecanico": <div style={{color: '#c9c9c9',
@@ -133,23 +133,28 @@ function Projetos (){
     const[PMatematico, AlterarMatematico] = useState("");
     const[PDocente, AlterarDocente] = useState("");
 
-    if((id !== undefined) & (num == 0)){
-        if(id == "mecanico"){
-            AlterarMecanico(conteudo.mecanico);
-        } else if(id == "web"){
-            AlterarWeb(conteudo.web);
-        } else if(id == "matematico"){
-            AlterarMatematico(conteudo.matematico);
-        } else if(id == "docencia"){
-            AlterarDocente(conteudo.docente);
-        }else {
-            AlterarMecanico("");
-            AlterarWeb("");
-            AlterarMatematico("");
-            AlterarDocente("");
+    function Verificacao(){
+        if((id !== undefined) & (num == 0)){
+            if(id == "mecanico"){
+                AlterarMecanico(conteudo.mecanico);
+            } else if(id == "web"){
+                AlterarWeb(conteudo.web);
+            } else if(id == "matematico"){
+                AlterarMatematico(conteudo.matematico);
+            } else if(id == "docencia"){
+                AlterarDocente(conteudo.docente);
+            }else {
+                AlterarMecanico("");
+                AlterarWeb("");
+                AlterarMatematico("");
+                AlterarDocente("");
+            }
+            num = 1;
         }
-        
-        num = 1;
+    }
+
+    function Reset(){
+        num = 0;
     }
 
     
@@ -158,14 +163,14 @@ function Projetos (){
         <header id="topo">
             <div>
                 <Link href="../">
-                    <a>
+                    <a onClick={() => Reset()}>
                         <img className="seta" src="/img/seta2.png"/>
                     </a>
                 </Link>
                 <a><h1 className="nome">Jefferson Barros</h1></a>
                 <div className="menu">
                     <Link href="/contato">
-                        <a className="card-menu">
+                        <a className="card-menu" onClick={() => Reset()}>
                             <h3>Contato</h3>
                         </a>
                     </Link>
@@ -173,8 +178,7 @@ function Projetos (){
             </div>
         </header>
 
-
-        <div id="pagina-projetos">
+        <div id="pagina-projetos" onAnimationEnd={ () => Verificacao()}>
             <p id="inicio" style={{padding: '0', margin:'0', width: '0', height: '0'}}></p>
             <p id="p-mecanico" style={{padding: '0', margin:'0', width: '0', height: '0'}}></p>
 
@@ -183,12 +187,11 @@ function Projetos (){
                 
                     <div className="seccao-1" style={{paddingTop: 'calc(8vh + 40px)'}}>
                         <a id="mecanico" onClick={ () => (AlterarMecanico(conteudo.mecanico), 
-                                            AlterarWeb(""),
-                                            AlterarMatematico(""),
-                                            AlterarDocente(""))}>
+                                                        AlterarWeb(""),
+                                                        AlterarMatematico(""),
+                                                        AlterarDocente(""))}>
                             PROJETOS MECÂNICOS
                         </a>
-
                         <div style={{width:'165px',
                                     height: '165px',
                                     backgroundColor: '#c9c9c9',
@@ -196,7 +199,11 @@ function Projetos (){
                                     backgroundSize: 'contain',
                                     backgroundRepeat: 'no-repeat',
                                     borderRadius: '82.5px',
-                                    margin: '0'}}>
+                                    margin: '0',
+                                    cursor: 'pointer'}} onClick={ () => (AlterarMecanico(conteudo.mecanico), 
+                                                                        AlterarWeb(""),
+                                                                        AlterarMatematico(""),
+                                                                        AlterarDocente(""))}>
                             
                         </div>
                     </div>
@@ -214,7 +221,11 @@ function Projetos (){
                                     backgroundRepeat: 'no-repeat',
                                     backgroundPosition: 'center',
                                     borderRadius: '82.5px',
-                                    margin: '0'}}>
+                                    margin: '0',
+                                    cursor: 'pointer'}} onClick={ () => (AlterarMecanico(""),
+                                                                    AlterarWeb(conteudo.web),
+                                                                    AlterarMatematico(""),
+                                                                    AlterarDocente(""))}>
                             
                         </div>
 
@@ -245,7 +256,11 @@ function Projetos (){
                                     backgroundSize: '100% 100%',
                                     backgroundRepeat: 'no-repeat',
                                     borderRadius: '82.5px',
-                                    margin: '0'}}>
+                                    margin: '0',
+                                    cursor: 'pointer'}} onClick={ () => (AlterarMecanico(""),
+                                                                        AlterarWeb(""),
+                                                                        AlterarMatematico(conteudo.matematico),
+                                                                        AlterarDocente(""))}>
                             
                         </div>
                     </div>
@@ -262,7 +277,11 @@ function Projetos (){
                                     backgroundSize: '180% 100%',
                                     backgroundRepeat: 'no-repeat',
                                     borderRadius: '82.5px',
-                                    margin: '0'}}>
+                                    margin: '0',
+                                    cursor: 'pointer'}} onClick={ () => (AlterarMecanico(""),
+                                                                        AlterarWeb(""),
+                                                                        AlterarMatematico(""),
+                                                                        AlterarDocente(conteudo.docente))}>
                             
                         </div>
 
@@ -285,5 +304,3 @@ function Projetos (){
         </div>
     </>)
 }
-
-export default Projetos;

@@ -110,12 +110,15 @@
         //     line-height: 24px;
         // }
         
-        &:hover,
-        &:focus,
-        &:active {
-            color:  #000000ce;
-            border-color:  #000000ce;
+        &:hover{
+            color:  #0070f3;
+            border-color:  #0070f3;
             animation: bounce 1s;
+        }
+
+
+        &:active{
+            transform: scale(0.95) !important;
         }
     }
 }

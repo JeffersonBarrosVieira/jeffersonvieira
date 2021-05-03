@@ -23,7 +23,7 @@ function App({ Component, pageProps }) {
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap" rel="stylesheet"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
 
-        {/* <link rel="icon" href="/favicon.ico"/> */}
+        <link rel="icon" href="/favicon.ico"/>
         <link rel="preload" href="/img/minha-foto2.png" as="image"/>
         <link rel="preload" href="/img/folha.png" as="image"/>
         <link rel="preload" href="/img/engrenagem.png" as="image"/>
