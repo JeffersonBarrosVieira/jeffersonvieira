@@ -1,0 +1,82 @@
+#molde{
+    background-image: linear-gradient(45deg, #06520a71, #120655a4 60%), url('/img/teste8.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .coluna{
+        
+        width: 80vw;
+        max-width: 750px;
+        padding: 50px 0 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        // background-color: rgba(44, 73, 64, 0.644);
+        
+        animation: fadeIn 2s 2.8s ease-in-out forwards;
+
+        .imagem{
+            height: 40vw;
+            max-height: 400px;
+            width: 100%;
+            overflow: hidden;
+            border: 3px solid #c9c9c9;
+            border-radius: 10px;   
+
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: all 1.0s ease;
+
+            &:hover{
+                background-size: 110%;
+            }
+
+            .escurecer{
+                height: 100%;
+                width: 100%;
+                background-size: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+
+                transition: all 1.0s ease;
+
+                &:hover{
+                    background-image: linear-gradient(to bottom, #3d3b397a 70%, #120a3f4d);
+                }
+
+            }
+        }
+        
+        .legenda{
+            // background-image: linear-gradient(to top, #d5762865, #1206557a 80%);
+            // background-repeat: no-repeat;
+            // background-attachment: fixed;
+            // background-size: cover;
+            // background-position: center;
+            margin-top: 10px;
+            padding: 10px 20px;
+            width: 100%;
+            border: 3px solid #c9c9c9;
+            border-radius: 10px;   
+
+            background-color: #00000073;
+            h3{
+                text-align: left;
+            }
+            p{
+                text-align: justify;
+            }
+        }
+    }
+}

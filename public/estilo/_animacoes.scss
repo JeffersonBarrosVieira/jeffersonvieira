@@ -41,7 +41,7 @@
         opacity: 1;
     }
     50%{
-        opacity: 0.3;
+        opacity: 0.5;
     }
     100%{
         opacity: 1;
@@ -98,6 +98,17 @@
         height: 850px;
         flex: 1;
         padding: 20px 0 20px 0;
+    }
+}
+
+@keyframes aparecer1 {
+    0% {
+        height: 0;
+    }
+    100% {
+        opacity: 1;
+        height: 850px;
+        flex: 1;
     }
 }
 

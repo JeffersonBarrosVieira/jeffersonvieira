@@ -19,24 +19,28 @@ export default function Projetos (){
                                             padding: '0',
                                             height: '0',
                                             opacity: '0',
-                                            animation: 'aparecer 4s 0.7s ease-out forwards'}}>
+                                            animation: 'aparecer1 4s 0.7s ease-out forwards'}}>
                                     <Mecanico/>
-                                    <div style={{padding: '20px 0 0 0',
+                                    <div style={{padding: '0 0 0 0',
                                                 width: '100%',
                                                 margin: '0',
                                                 alignItems: 'center',
                                                 justifyContent: 'center',
                                                 flex: '1',
                                                 display: 'flex',
-                                                flexDirection: 'column'}}>
-                                        <a href="#inicio" onClick={ () => (AlterarMecanico(""),
+                                                flexDirection: 'column',
+                                                backgroundImage: "linear-gradient(45deg, #06520a71, #120655a4 60%), url('/img/teste8.jpg')",
+                                                backgroundAttachment: 'fixed',
+                                                backgroundRepeat: 'no-repeat',
+                                                backgroundPosition: 'center',
+                                                backgroundSize: 'cover'}}>
+                                        <a href="#inicio" style={{opacity: '0', animation: 'fadeIn 2s 4s ease-in-out forwards'}} onClick={ () => (AlterarMecanico(""),
                                                                             AlterarWeb(""),
                                                                             AlterarMatematico(""),
                                                                             AlterarDocente(""))}>
                                             <img style={{width: '50px',
                                                         height: '50px',
-                                                        margin: '30px 0 -10px 0',
-                                                        animation: 'bounce2 2s infinite'}} src="/img/seta.png"/>
+                                                        animation: 'bounce2 2s infinite'}} src="/img/seta2.png"/>
                                         </a>
                                     </div>
                                 </div>,
@@ -48,10 +52,10 @@ export default function Projetos (){
                                         padding: '0',
                                         height: '0',
                                         opacity: '0',
-                                        animation: 'aparecer 4s 0.7s ease-out forwards'}}>
+                                        animation: 'aparecer1 4s 0.7s ease-out forwards'}}>
 
                                 <Web/>
-                                <div style={{padding: '20px 0 0 0',
+                                {/* <div style={{padding: '0 0 0 0',
                                             width: '100%',
                                             margin: '0',
                                             alignItems: 'center',
@@ -68,7 +72,7 @@ export default function Projetos (){
                                                     margin: '30px 0 -10px 0',
                                                     animation: 'bounce2 2s infinite'}} src="/img/seta.png"/>
                                     </a>
-                                </div>
+                                </div> */}
                             </div>,
 
                     "matematico":   <div style={{color: '#c9c9c9',
@@ -78,9 +82,9 @@ export default function Projetos (){
                                                 padding: '0',
                                                 height: '0',
                                                 opacity: '0',
-                                                animation: 'aparecer 4s 0.7s ease-out forwards'}}>
+                                                animation: 'aparecer1 4s 0.7s ease-out forwards'}}>
                                         <Matematico/>
-                                        <div style={{padding: '20px 0 0 0',
+                                        {/* <div style={{padding: '0 0 0 0',
                                                     width: '100%',
                                                     margin: '0',
                                                     alignItems: 'center',
@@ -97,7 +101,7 @@ export default function Projetos (){
                                                             margin: '30px 0 -10px 0',
                                                             animation: 'bounce2 2s infinite'}} src="/img/seta.png"/>
                                             </a>
-                                        </div>
+                                        </div> */}
                                     </div>,
 
                     "docente":  <div style={{color: '#c9c9c9',
@@ -106,9 +110,9 @@ export default function Projetos (){
                                             padding: '0',
                                             height: '0',
                                             opacity: '0',
-                                            animation: 'aparecer 4s 0.7s ease-out forwards'}}>
+                                            animation: 'aparecer1 4s 0.7s ease-out forwards'}}>
                                     <Docencia/>
-                                    <div style={{padding: '20px 0 0 0',
+                                    {/* <div style={{padding: '0 0 0 0',
                                                 width: '100%',
                                                 margin: '0',
                                                 alignItems: 'center',
@@ -125,7 +129,7 @@ export default function Projetos (){
                                                         margin: '30px 0 -10px 0',
                                                         animation: 'bounce2 2s infinite'}} src="/img/seta.png"/>
                                         </a>
-                                    </div>
+                                    </div> */}
                                 </div>};
 
     const[PMecanico, AlterarMecanico] = useState("");
