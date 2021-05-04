@@ -1,34 +1,17 @@
-import React, {useState} from 'react';
+import React from 'react';
+import Molde from '../_molde';
 
-function Molde(props){
-    return(
-        <div className="coluna">
-            <div className="imagem" style={{backgroundImage: `url('${props.imagem}')`}}>
-                <div className="escurecer">
-                </div>
-            </div>
-            <div className="legenda">
-                <h3>{props.titulo}</h3>
-                <p>
-                    {props.children}
-                </p>
-            </div>
-        </div>
-    )
-}
 
-const Mecanico = () => {
+const Mecanico = (props) => {
     return(<>
-        <div id="molde">
+        <div id="molde" style={{backgroundImage: "linear-gradient(45deg, #06520a71, #120655a4 60%), url('/img/teste8.jpg')"}}>
             <Molde titulo="Pojeto 1" imagem="/img/projetos/mecanico/braço-robotico.jpg">
                 Resumo do projeto
             </Molde>
             <Molde titulo="Pojeto 4" imagem="/img/projetos/mecanico/braço-robotico.jpg">
                 Resumo do projeto
             </Molde>
-            <Molde titulo="Pojeto 1" imagem="/img/projetos/mecanico/braço-robotico.jpg">
-                Resumo do projeto
-            </Molde>
+            {props.children}
         </div>
     </>)
 }

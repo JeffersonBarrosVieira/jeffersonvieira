@@ -9,9 +9,42 @@ import Docencia from './docencia/docencia';
 
 var num = 0;
 
+// Função Seta() só para economizar linhas de código, e poder
+// chamar ela em qualquer lugar.
+function Seta(){
+
+    return(
+        <div style={{padding: '0 0 0 0',
+                    width: '100%',
+                    margin: '0',
+                    marginTop: '30px',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    flex: '1',
+                    display: 'flex',
+                    flexDirection: 'column'}}>
+            <a href="#inicio" style={{opacity: '0', animation: 'fadeIn 2s 4s ease-in-out forwards'}}>
+                <img style={{width: '50px',
+                            height: '50px',
+                            animation: 'bounce2 2s infinite'}} src="/img/seta2.png"/>
+            </a>
+        </div>
+    )
+}
+
 export default function Projetos (){
+
+    // Ler a url e armazena na variável 'id'
     const router = useRouter();
     const id = router.query.projeto;
+
+    // Funções para alterar o conteúdo dinâmicamente
+    const[PMecanico, AlterarMecanico] = useState("");
+    const[PWeb, AlterarWeb] = useState("");
+    const[PMatematico, AlterarMatematico] = useState("");
+    const[PDocente, AlterarDocente] = useState("");
+
+    // Os conteúdos dinâmicos, que vão ser intercalados
     let conteudo = {"mecanico": <div style={{color: '#c9c9c9',
                                             width: '100%',
                                             borderTop: '1px solid #000000ce',
@@ -20,29 +53,14 @@ export default function Projetos (){
                                             height: '0',
                                             opacity: '0',
                                             animation: 'aparecer1 4s 0.7s ease-out forwards'}}>
-                                    <Mecanico/>
-                                    <div style={{padding: '0 0 0 0',
-                                                width: '100%',
-                                                margin: '0',
-                                                alignItems: 'center',
-                                                justifyContent: 'center',
-                                                flex: '1',
-                                                display: 'flex',
-                                                flexDirection: 'column',
-                                                backgroundImage: "linear-gradient(45deg, #06520a71, #120655a4 60%), url('/img/teste8.jpg')",
-                                                backgroundAttachment: 'fixed',
-                                                backgroundRepeat: 'no-repeat',
-                                                backgroundPosition: 'center',
-                                                backgroundSize: 'cover'}}>
-                                        <a href="#inicio" style={{opacity: '0', animation: 'fadeIn 2s 4s ease-in-out forwards'}} onClick={ () => (AlterarMecanico(""),
-                                                                            AlterarWeb(""),
-                                                                            AlterarMatematico(""),
-                                                                            AlterarDocente(""))}>
-                                            <img style={{width: '50px',
-                                                        height: '50px',
-                                                        animation: 'bounce2 2s infinite'}} src="/img/seta2.png"/>
+                                    <Mecanico>
+                                        <a onClick={ () => (AlterarMecanico(""),
+                                                            AlterarWeb(""),
+                                                            AlterarMatematico(""),
+                                                            AlterarDocente(""))}>
+                                            <Seta/>
                                         </a>
-                                    </div>
+                                    </Mecanico>
                                 </div>,
 
                     "web":  <div style={{color: '#c9c9c9',
@@ -54,25 +72,14 @@ export default function Projetos (){
                                         opacity: '0',
                                         animation: 'aparecer1 4s 0.7s ease-out forwards'}}>
 
-                                <Web/>
-                                {/* <div style={{padding: '0 0 0 0',
-                                            width: '100%',
-                                            margin: '0',
-                                            alignItems: 'center',
-                                            justifyContent: 'center',
-                                            flex: '1',
-                                            display: 'flex',
-                                            flexDirection: 'column'}}>
-                                    <a href="#p-web" onClick={ () => (AlterarMecanico(""),
-                                                                        AlterarWeb(""),
-                                                                        AlterarMatematico(""),
-                                                                        AlterarDocente(""))}>
-                                        <img style={{width: '50px',
-                                                    height: '50px',
-                                                    margin: '30px 0 -10px 0',
-                                                    animation: 'bounce2 2s infinite'}} src="/img/seta.png"/>
-                                    </a>
-                                </div> */}
+                                <Web>
+                                        <a onClick={ () => (AlterarMecanico(""),
+                                                            AlterarWeb(""),
+                                                            AlterarMatematico(""),
+                                                            AlterarDocente(""))}>
+                                            <Seta/>
+                                        </a>
+                                </Web>
                             </div>,
 
                     "matematico":   <div style={{color: '#c9c9c9',
@@ -83,25 +90,14 @@ export default function Projetos (){
                                                 height: '0',
                                                 opacity: '0',
                                                 animation: 'aparecer1 4s 0.7s ease-out forwards'}}>
-                                        <Matematico/>
-                                        {/* <div style={{padding: '0 0 0 0',
-                                                    width: '100%',
-                                                    margin: '0',
-                                                    alignItems: 'center',
-                                                    justifyContent: 'center',
-                                                    flex: '1',
-                                                    display: 'flex',
-                                                    flexDirection: 'column'}}>
-                                            <a href="#p-matematico" onClick={ () => (AlterarMecanico(""),
-                                                                                AlterarWeb(""),
-                                                                                AlterarMatematico(""),
-                                                                                AlterarDocente(""))}>
-                                                <img style={{width: '50px',
-                                                            height: '50px',
-                                                            margin: '30px 0 -10px 0',
-                                                            animation: 'bounce2 2s infinite'}} src="/img/seta.png"/>
+                                        <Matematico>
+                                            <a onClick={ () => (AlterarMecanico(""),
+                                                                AlterarWeb(""),
+                                                                AlterarMatematico(""),
+                                                                AlterarDocente(""))}>
+                                                <Seta/>
                                             </a>
-                                        </div> */}
+                                        </Matematico>
                                     </div>,
 
                     "docente":  <div style={{color: '#c9c9c9',
@@ -111,32 +107,19 @@ export default function Projetos (){
                                             height: '0',
                                             opacity: '0',
                                             animation: 'aparecer1 4s 0.7s ease-out forwards'}}>
-                                    <Docencia/>
-                                    {/* <div style={{padding: '0 0 0 0',
-                                                width: '100%',
-                                                margin: '0',
-                                                alignItems: 'center',
-                                                justifyContent: 'center',
-                                                flex: '1',
-                                                display: 'flex',
-                                                flexDirection: 'column'}}>
-                                        <a href="#p-docencia" onClick={ () => (AlterarMecanico(""),
-                                                                            AlterarWeb(""),
-                                                                            AlterarMatematico(""),
-                                                                            AlterarDocente(""))}>
-                                            <img style={{width: '50px',
-                                                        height: '50px',
-                                                        margin: '30px 0 -10px 0',
-                                                        animation: 'bounce2 2s infinite'}} src="/img/seta.png"/>
+                                    <Docencia>
+                                        <a onClick={ () => (AlterarMecanico(""),
+                                                            AlterarWeb(""),
+                                                            AlterarMatematico(""),
+                                                            AlterarDocente(""))}>
+                                            <Seta/>
                                         </a>
-                                    </div> */}
+                                    </Docencia>
                                 </div>};
 
-    const[PMecanico, AlterarMecanico] = useState("");
-    const[PWeb, AlterarWeb] = useState("");
-    const[PMatematico, AlterarMatematico] = useState("");
-    const[PDocente, AlterarDocente] = useState("");
-
+    // Função para identificar e comparar o link na url que foi criado ao clicar nos cards
+    // da página anterior seção projetos, com os endereços que devem ser aberto. verifica se
+    // existe tal palavra na url
     function Verificacao(){
         if((id !== undefined) & (num == 0)){
             if(id == "mecanico"){
@@ -157,6 +140,14 @@ export default function Projetos (){
         }
     }
 
+    // Como estou usando um recursso de pré-carregamento <Link><Link/>, a variavel 'num'
+    // ficará com o mesmo valor, mesmo navegando entre as páginas do site, a não ser que der
+    // um refresh para resetar tudo, então é necessário resetar a variável 'num'. E com isso
+    // a função de verificação poderá fazer uma nova leitura, e ver qual seção será aberta ao
+    // entrar na página (projetos mecânico), (projetos web), (projetos matematicos) ou
+    // (projetos à docência).
+
+    // Função que reseta
     function Reset(){
         num = 0;
     }
@@ -182,20 +173,25 @@ export default function Projetos (){
             </div>
         </header>
 
+        {/* quando a animação principal de carregamento terminar, executará a função Verificação() */}
         <div id="pagina-projetos" onAnimationEnd={ () => Verificacao()}>
+            {/* âncoras */}
             <p id="inicio" style={{padding: '0', margin:'0', width: '0', height: '0'}}></p>
             <p id="p-mecanico" style={{padding: '0', margin:'0', width: '0', height: '0'}}></p>
 
             <main className="inicio">
 
-                
+                    {/* Seção de Projetos Mecânicos */}
                     <div className="seccao-1" style={{paddingTop: 'calc(8vh + 40px)'}}>
+                        {/* Botão projetos mecânicos */}
                         <a id="mecanico" onClick={ () => (AlterarMecanico(conteudo.mecanico), 
                                                         AlterarWeb(""),
                                                         AlterarMatematico(""),
                                                         AlterarDocente(""))}>
                             PROJETOS MECÂNICOS
                         </a>
+
+                        {/* gif do robô */}
                         <div style={{width:'165px',
                                     height: '165px',
                                     backgroundColor: '#c9c9c9',
@@ -213,10 +209,14 @@ export default function Projetos (){
                     </div>
 
                     {PMecanico}
-
+                    {/* Fim da seção de projetos mecânicos */}
+                    
+                    {/* âncora */}
                     <p id="p-web" style={{padding: '0', margin:'0', width: '0', height: '0'}}></p>
-
+                    
+                    {/* Seção de Projetos Web */}
                     <div className="seccao-2">
+                        {/* Gif do Computador */}
                         <div style={{width:'165px',
                                     height: '165px',
                                     backgroundColor: '#c9c9c9',
@@ -232,7 +232,8 @@ export default function Projetos (){
                                                                     AlterarDocente(""))}>
                             
                         </div>
-
+                        
+                        {/* Botão Projetos Web */}
                         <a id="web" onClick={ () => (AlterarMecanico(""),
                                             AlterarWeb(conteudo.web),
                                             AlterarMatematico(""),
@@ -242,17 +243,22 @@ export default function Projetos (){
                     </div>
 
                     {PWeb}
+                    {/* Fim da seção de projetos web */}
 
+                    {/* âncora */}
                     <p id="p-matematico" style={{padding: '0', margin:'0', width: '0', height: '0'}}></p>
-
+                    
+                    {/* Seção de Projetos Matemáticos */}
                     <div className="seccao-1">
+                        {/* Botão Projetos Matemáticos */}
                         <a id="matematico" onClick={ () => (AlterarMecanico(""),
                                             AlterarWeb(""),
                                             AlterarMatematico(conteudo.matematico),
                                             AlterarDocente(""))}>
                             PROJETOS MATEMÁTICOS
                         </a>
-
+                        
+                        {/* Gif do gráfico animado */}
                         <div style={{width:'165px',
                                     height: '165px',
                                     backgroundColor: '#c9c9c9',
@@ -270,10 +276,14 @@ export default function Projetos (){
                     </div>
 
                     {PMatematico}
+                    {/* Fim da seção de projetos matemáticos */}
 
+                    {/* âncora */}
                     <p id="p-docencia" style={{padding: '0', margin:'0', width: '0', height: '0'}}></p>
-
+                    
+                    {/* Seção de Projetos à Docência */}
                     <div className="seccao-2">
+                        {/* Gif do Lápis animado */}
                         <div style={{width:'165px',
                                     height: '165px',
                                     backgroundColor: '#c9c9c9',
@@ -288,7 +298,8 @@ export default function Projetos (){
                                                                         AlterarDocente(conteudo.docente))}>
                             
                         </div>
-
+                        
+                        {/* Botão Projetos à Docência */}
                         <a id="docencia" onClick={ () => (AlterarMecanico(""),
                                                             AlterarWeb(""),
                                                             AlterarMatematico(""),
@@ -298,6 +309,7 @@ export default function Projetos (){
                     </div>
 
                     {PDocente}
+                    {/* Fim da seção de projetos à docência */}
             </main>
 
             <footer id="rodape-inicial">
