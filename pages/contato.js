@@ -60,7 +60,7 @@ export default function Contato(){
                     </a>
                 </Link>
                 
-                <a><h1 className="nome">Jefferson Barros</h1></a>
+                <a><h1 className="nome" style={{margin: '2.5vh 0 0 45px'}}>Jefferson Barros</h1></a>
             </div>
         </header>
         <div className="pagina-contato">

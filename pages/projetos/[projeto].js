@@ -162,7 +162,7 @@ export default function Projetos (){
                         <img className="seta" src="/img/seta2.png"/>
                     </a>
                 </Link>
-                <a><h1 className="nome">Jefferson Barros</h1></a>
+                <a><h1 className="nome" style={{margin: '2.5vh 0 0 45px'}}>Jefferson Barros</h1></a>
                 <div className="menu">
                     <Link href="/contato">
                         <a className="card-menu" onClick={() => Reset()}>
