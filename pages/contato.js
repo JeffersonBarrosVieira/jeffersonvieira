@@ -97,7 +97,7 @@ export default function Contato(){
                         <a style={{cursor: 'not-allowed'}} href="#" className="circulo-icon">
                             <i className="fa fa-twitter" aria-hidden="true"></i>
                         </a>
-                        <a style={{cursor: 'not-allowed'}} href="#" className="circulo-icon">
+                        <a style={{cursor: 'pointer'}} href="https://www.instagram.com/jefferson.barros.vieira/" className="circulo-icon">
                             <i className="fa fa-instagram" aria-hidden="true"></i>
                         </a>
                         <a style={{cursor: 'not-allowed'}} href="#" className="circulo-icon">
