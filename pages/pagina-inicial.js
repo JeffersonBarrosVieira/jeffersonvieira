@@ -14,8 +14,12 @@ const PaginaInicial = () => {
         <div id="pagina-inicial">
             
             <header id="topo">
-                <div>
-                <a><h1 className="nome">Jefferson Barros</h1></a>
+                <div style={{width: '100%'}}>
+                    <Link href="http://lattes.cnpq.br/6474366647235308">
+                        <a target="_blank">
+                            <h1 className="nome">Jefferson Barros</h1>
+                        </a>
+                    </Link>
                     <div className="menu">
                         <a href="#conhecer" className="card-menu" onClick={ () => AlterarConteudo(conteudo[0]) }>
                             <h3>Sobre</h3>
@@ -36,7 +40,17 @@ const PaginaInicial = () => {
             </header>
 
             <main id="inicio">
-                <h1 className="title">
+                {/* <div style={{width: '160px',
+                            height: '160px',
+                            border: '2px solid #c9c9c9',
+                            borderRadius: '50%',
+                            backgroundImage: "url('/img/icones/icone-720x720.png')",
+                            backgroundSize: 'contain',
+                            margin: '0',
+                            marginTop: '10vh'}}>
+
+                </div> */}
+                <h1 className="title" style={{marginTop: '45vh'}}>
                     JEFFERSON <Link href="#conhecer"><a onClick={ () => AlterarConteudo(conteudo[0]) }>BARROS</a></Link>
                 </h1>
 
@@ -89,7 +103,7 @@ const PaginaInicial = () => {
             </main>
 
             <footer id="rodape-inicial">
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a href="http://lattes.cnpq.br/6474366647235308" target="_blank" rel="noopener noreferrer">
                     Developed by <h4>: Jefferson Barros Vieira</h4>.
                 </a>
             </footer>
