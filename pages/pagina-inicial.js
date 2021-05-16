@@ -40,17 +40,20 @@ const PaginaInicial = () => {
             </header>
 
             <main id="inicio">
-                {/* <div style={{width: '160px',
-                            height: '160px',
-                            border: '2px solid #c9c9c9',
+                <div style={{width: '200px',
+                            height: '200px',
+                            borderTop: '2px solid #c9c9c99a',
+                            borderBottom: '2px solid #c9c9c99a',
                             borderRadius: '50%',
+                            overflow: 'hidden',
                             backgroundImage: "url('/img/icones/icone-720x720.png')",
                             backgroundSize: 'contain',
+                            opacity: '0.9',
                             margin: '0',
-                            marginTop: '10vh'}}>
+                            marginTop: '20vh'}}>
 
-                </div> */}
-                <h1 className="title" style={{marginTop: '45vh'}}>
+                </div>
+                <h1 className="title" style={{marginTop: '40px'}}>
                     JEFFERSON <Link href="#conhecer"><a onClick={ () => AlterarConteudo(conteudo[0]) }>BARROS</a></Link>
                 </h1>
 
