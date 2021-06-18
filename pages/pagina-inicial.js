@@ -107,7 +107,7 @@ const PaginaInicial = () => {
 
             <footer id="rodape-inicial">
                 <a href="http://lattes.cnpq.br/6474366647235308" target="_blank" rel="noopener noreferrer">
-                    Copyright (c) 2021 <h4>: Jefferson Barros Vieira</h4>.
+                    Copyright (c) 2021 <h4> Jefferson Barros Vieira</h4>.
                 </a>
             </footer>
         </div>
