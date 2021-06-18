@@ -314,7 +314,7 @@ export default function Projetos (){
 
             <footer id="rodape-inicial">
                 <a href="#" target="_blank" rel="noopener noreferrer">
-                    Developed by <h4>: Jefferson Barros Vieira</h4>.
+                    Copyright (c) 2021 <h4> Jefferson Barros Vieira</h4>.
                 </a>
             </footer>
         </div>
